@@ -1,0 +1,3 @@
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-subbuild/CMakeFiles/wamr_ext-populate.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-subbuild/CMakeFiles/edit_cache.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1295 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/wamr_ext-build/libiwasm.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake-build-debug/_deps/wamr_ext-src/CMakeLists.txt",
+			"cmake-build-debug/_deps/wamr_ext-src/build-scripts/config_common.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/build-scripts/runtime_lib.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/iwasm_common.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/linux/shared_platform.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot/iwasm_aot.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/iwasm/interpreter/iwasm_interp.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/simde/simde.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/platform_api_posix.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/libc-util/platform_common_libc_util.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/shared_utils.cmake",
+			"cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/uncommon/shared_uncommon.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 159,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 189,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 124,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 179,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 196,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 9,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 8,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 194,
+				"parent" : 4
+			},
+			{
+				"file" : 4,
+				"parent" : 12
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 6,
+				"parent" : 13
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 334,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 361,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 366,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 373,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 608,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 77,
+				"parent" : 4
+			},
+			{
+				"file" : 5,
+				"parent" : 21
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 6,
+				"parent" : 22
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 642,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 315,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 227,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 58,
+				"parent" : 4
+			},
+			{
+				"file" : 6,
+				"parent" : 27
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 6,
+				"parent" : 28
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 91,
+				"parent" : 4
+			},
+			{
+				"file" : 7,
+				"parent" : 30
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 6,
+				"parent" : 31
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 98,
+				"parent" : 4
+			},
+			{
+				"file" : 8,
+				"parent" : 33
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 6,
+				"parent" : 34
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 354,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 550,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 311,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 626,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 416,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 323,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 659,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 387,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 163,
+				"parent" : 4
+			},
+			{
+				"file" : 9,
+				"parent" : 44
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 7,
+				"parent" : 45
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 492,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 11,
+				"parent" : 13
+			},
+			{
+				"file" : 10,
+				"parent" : 48
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 32,
+				"parent" : 49
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 33,
+				"parent" : 49
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 8,
+				"parent" : 28
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 8,
+				"parent" : 22
+			},
+			{
+				"command" : 4,
+				"file" : 7,
+				"line" : 8,
+				"parent" : 31
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 8,
+				"parent" : 34
+			},
+			{
+				"command" : 4,
+				"file" : 9,
+				"line" : 9,
+				"parent" : 45
+			},
+			{
+				"command" : 4,
+				"file" : 9,
+				"line" : 21,
+				"parent" : 45
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 181,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 8,
+				"parent" : 13
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 9,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 20,
+				"parent" : 49
+			},
+			{
+				"file" : 11,
+				"parent" : 61
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 6,
+				"parent" : 62
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 195,
+				"parent" : 4
+			},
+			{
+				"file" : 12,
+				"parent" : 64
+			},
+			{
+				"command" : 4,
+				"file" : 12,
+				"line" : 7,
+				"parent" : 65
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 6,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 197,
+				"parent" : 4
+			},
+			{
+				"file" : 13,
+				"parent" : 68
+			},
+			{
+				"command" : 4,
+				"file" : 13,
+				"line" : 6,
+				"parent" : 69
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"file" : 14,
+				"parent" : 71
+			},
+			{
+				"command" : 4,
+				"file" : 14,
+				"line" : 6,
+				"parent" : 72
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -std=gnu99 -ffunction-sections -fdata-sections -Wall -Wno-unused-parameter -Wno-pedantic -fPIC -Wall -Wextra -Wformat -Wformat-security -ffunction-sections -fdata-sections -Wno-unused-parameter -Wno-pedantic -fvisibility=hidden -mindirect-branch-register -g -std=gnu99 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "BH_DEBUG=1"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "BH_FREE=wasm_runtime_free"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "BH_MALLOC=wasm_runtime_malloc"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "BH_PLATFORM_LINUX"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "BUILD_TARGET_X86_64"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WAMR_ENABLE_COPY_CALLSTACK=0"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "WASM_DISABLE_HW_BOUND_CHECK=0"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "WASM_DISABLE_STACK_HW_BOUND_CHECK=0"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "WASM_DISABLE_WAKEUP_BLOCKING_OP=0"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "WASM_DISABLE_WRITE_GS_BASE=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WASM_ENABLE_AOT=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "WASM_ENABLE_AOT_INTRINSICS=1"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "WASM_ENABLE_BULK_MEMORY=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "WASM_ENABLE_FAST_INTERP=1"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "WASM_ENABLE_INTERP=1"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "WASM_ENABLE_LIBC_BUILTIN=1"
+				},
+				{
+					"backtrace" : 35,
+					"define" : "WASM_ENABLE_LIBC_WASI=1"
+				},
+				{
+					"backtrace" : 36,
+					"define" : "WASM_ENABLE_MINI_LOADER=0"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "WASM_ENABLE_MODULE_INST_CONTEXT=1"
+				},
+				{
+					"backtrace" : 38,
+					"define" : "WASM_ENABLE_MULTI_MODULE=0"
+				},
+				{
+					"backtrace" : 39,
+					"define" : "WASM_ENABLE_QUICK_AOT_ENTRY=1"
+				},
+				{
+					"backtrace" : 40,
+					"define" : "WASM_ENABLE_REF_TYPES=1"
+				},
+				{
+					"backtrace" : 41,
+					"define" : "WASM_ENABLE_SHARED_MEMORY=0"
+				},
+				{
+					"backtrace" : 42,
+					"define" : "WASM_ENABLE_SHRUNK_MEMORY=1"
+				},
+				{
+					"backtrace" : 43,
+					"define" : "WASM_ENABLE_SIMD=1"
+				},
+				{
+					"backtrace" : 46,
+					"define" : "WASM_ENABLE_SIMDE=1"
+				},
+				{
+					"backtrace" : 47,
+					"define" : "WASM_GLOBAL_HEAP_SIZE=10485760"
+				},
+				{
+					"backtrace" : 50,
+					"define" : "WASM_HAVE_MREMAP=1"
+				},
+				{
+					"backtrace" : 51,
+					"define" : "_GNU_SOURCE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 52,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/interpreter"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/include"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/simde"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/simde/simde"
+				},
+				{
+					"backtrace" : 57,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/simde-src"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/include"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/linux"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/linux/../include"
+				},
+				{
+					"backtrace" : 63,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/libc-util"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc"
+				},
+				{
+					"backtrace" : 67,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/utils"
+				},
+				{
+					"backtrace" : 73,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/uncommon"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "BH_DEBUG=1"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "BH_FREE=wasm_runtime_free"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "BH_MALLOC=wasm_runtime_malloc"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "BH_PLATFORM_LINUX"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "BUILD_TARGET_X86_64"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WAMR_ENABLE_COPY_CALLSTACK=0"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "WASM_DISABLE_HW_BOUND_CHECK=0"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "WASM_DISABLE_STACK_HW_BOUND_CHECK=0"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "WASM_DISABLE_WAKEUP_BLOCKING_OP=0"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "WASM_DISABLE_WRITE_GS_BASE=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WASM_ENABLE_AOT=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "WASM_ENABLE_AOT_INTRINSICS=1"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "WASM_ENABLE_BULK_MEMORY=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "WASM_ENABLE_FAST_INTERP=1"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "WASM_ENABLE_INTERP=1"
+				},
+				{
+					"backtrace" : 32,
+					"define" : "WASM_ENABLE_LIBC_BUILTIN=1"
+				},
+				{
+					"backtrace" : 35,
+					"define" : "WASM_ENABLE_LIBC_WASI=1"
+				},
+				{
+					"backtrace" : 36,
+					"define" : "WASM_ENABLE_MINI_LOADER=0"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "WASM_ENABLE_MODULE_INST_CONTEXT=1"
+				},
+				{
+					"backtrace" : 38,
+					"define" : "WASM_ENABLE_MULTI_MODULE=0"
+				},
+				{
+					"backtrace" : 39,
+					"define" : "WASM_ENABLE_QUICK_AOT_ENTRY=1"
+				},
+				{
+					"backtrace" : 40,
+					"define" : "WASM_ENABLE_REF_TYPES=1"
+				},
+				{
+					"backtrace" : 41,
+					"define" : "WASM_ENABLE_SHARED_MEMORY=0"
+				},
+				{
+					"backtrace" : 42,
+					"define" : "WASM_ENABLE_SHRUNK_MEMORY=1"
+				},
+				{
+					"backtrace" : 43,
+					"define" : "WASM_ENABLE_SIMD=1"
+				},
+				{
+					"backtrace" : 46,
+					"define" : "WASM_ENABLE_SIMDE=1"
+				},
+				{
+					"backtrace" : 47,
+					"define" : "WASM_GLOBAL_HEAP_SIZE=10485760"
+				},
+				{
+					"backtrace" : 50,
+					"define" : "WASM_HAVE_MREMAP=1"
+				},
+				{
+					"backtrace" : 51,
+					"define" : "_GNU_SOURCE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 52,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/interpreter"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/include"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/simde"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/simde/simde"
+				},
+				{
+					"backtrace" : 57,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/simde-src"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/include"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/linux"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/linux/../include"
+				},
+				{
+					"backtrace" : 63,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/libc-util"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc"
+				},
+				{
+					"backtrace" : 67,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/utils"
+				},
+				{
+					"backtrace" : 73,
+					"path" : "/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/uncommon"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				41
+			]
+		}
+	],
+	"id" : "vmlib::@808582f2641ffd1bfaa4",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "vmlib",
+	"nameOnDisk" : "libiwasm.a",
+	"paths" : 
+	{
+		"build" : "_deps/wamr_ext-build",
+		"source" : "cmake-build-debug/_deps/wamr_ext-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				41
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_assert.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/bh_vector.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64_simd.s",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_fast.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot/aot_intrinsic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot/aot_loader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot/aot_runtime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-debug/_deps/wamr_ext-src/core/iwasm/aot/arch/aot_reloc_x86_64.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

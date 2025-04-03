@@ -1,0 +1,15 @@
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/wamrlib.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/wasm_host.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/install.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/install/local.dir
+/home/eb/fyp/helloworld/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/vmlib.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/edit_cache.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/rebuild_cache.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/list_install_components.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/install.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/install/local.dir
+/home/eb/fyp/helloworld/cmake-build-debug/_deps/wamr_ext-build/CMakeFiles/install/strip.dir
