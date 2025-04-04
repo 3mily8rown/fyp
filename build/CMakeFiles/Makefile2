@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -100,14 +100,14 @@ _deps/wamr_ext-build/clean: _deps/wamr_ext-build/CMakeFiles/vmlib.dir/clean
 CMakeFiles/wamrlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wamrlib.dir/build.make CMakeFiles/wamrlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wamrlib.dir/build.make CMakeFiles/wamrlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target wamrlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target wamrlib"
 .PHONY : CMakeFiles/wamrlib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/wamrlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wamrlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 0
 .PHONY : CMakeFiles/wamrlib.dir/rule
 
 # Convenience name for target.
@@ -126,14 +126,14 @@ CMakeFiles/wamrlib.dir/clean:
 CMakeFiles/wasm_host.dir/all: CMakeFiles/wamrlib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=97,98 "Built target wasm_host"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=97,98,99 "Built target wasm_host"
 .PHONY : CMakeFiles/wasm_host.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/wasm_host.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wasm_host.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 0
 .PHONY : CMakeFiles/wasm_host.dir/rule
 
 # Convenience name for target.
@@ -152,14 +152,14 @@ CMakeFiles/wasm_host.dir/clean:
 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target vmlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target vmlib"
 .PHONY : _deps/wamr_ext-build/CMakeFiles/vmlib.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 50
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 0
 .PHONY : _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule
 
 # Convenience name for target.

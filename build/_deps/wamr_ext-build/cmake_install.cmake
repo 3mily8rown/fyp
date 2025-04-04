@@ -1,4 +1,4 @@
-# Install script for directory: /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src
+# Install script for directory: /home/eb/fyp/helloworld/build/_deps/wamr_ext-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build/libiwasm.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build/libiwasm.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/iwasm" TYPE FILE FILES
-    "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/include/wasm_c_api.h"
-    "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/include/wasm_export.h"
-    "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/include/lib_export.h"
+    "/home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/include/wasm_c_api.h"
+    "/home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/include/wasm_export.h"
+    "/home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/include/lib_export.h"
     )
 endif()
 
@@ -58,7 +58,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm/iwasmTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm/iwasmTargets.cmake"
-         "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build/CMakeFiles/Export/892e3d9b4804dc8712a79845cfdc6c3e/iwasmTargets.cmake")
+         "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build/CMakeFiles/Export/892e3d9b4804dc8712a79845cfdc6c3e/iwasmTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm/iwasmTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -71,16 +71,16 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm" TYPE FILE FILES "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build/CMakeFiles/Export/892e3d9b4804dc8712a79845cfdc6c3e/iwasmTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm" TYPE FILE FILES "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build/CMakeFiles/Export/892e3d9b4804dc8712a79845cfdc6c3e/iwasmTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm" TYPE FILE FILES "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build/CMakeFiles/Export/892e3d9b4804dc8712a79845cfdc6c3e/iwasmTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm" TYPE FILE FILES "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build/CMakeFiles/Export/892e3d9b4804dc8712a79845cfdc6c3e/iwasmTargets-release.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/iwasm" TYPE FILE FILES
-    "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build/iwasmConfig.cmake"
-    "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build/iwasmConfigVersion.cmake"
+    "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build/iwasmConfig.cmake"
+    "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build/iwasmConfigVersion.cmake"
     )
 endif()
 

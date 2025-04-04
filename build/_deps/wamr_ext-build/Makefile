@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build//CMakeFiles/progress.marks
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 0
+	cd /home/eb/fyp/helloworld/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles /home/eb/fyp/helloworld/build/_deps/wamr_ext-build//CMakeFiles/progress.marks
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/clean
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/preinstall
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/preinstall
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/eb/fyp/helloworld/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule
 .PHONY : _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ vmlib: _deps/wamr_ext-build/CMakeFiles/vmlib.dir/rule
 
 # fast build rule for target.
 vmlib/fast:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build
 .PHONY : vmlib/fast
 
 core/iwasm/aot/aot_intrinsic.o: core/iwasm/aot/aot_intrinsic.c.o
@@ -180,7 +180,7 @@ core/iwasm/aot/aot_intrinsic.o: core/iwasm/aot/aot_intrinsic.c.o
 
 # target to build an object file
 core/iwasm/aot/aot_intrinsic.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_intrinsic.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_intrinsic.c.o
 .PHONY : core/iwasm/aot/aot_intrinsic.c.o
 
 core/iwasm/aot/aot_intrinsic.i: core/iwasm/aot/aot_intrinsic.c.i
@@ -188,7 +188,7 @@ core/iwasm/aot/aot_intrinsic.i: core/iwasm/aot/aot_intrinsic.c.i
 
 # target to preprocess a source file
 core/iwasm/aot/aot_intrinsic.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_intrinsic.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_intrinsic.c.i
 .PHONY : core/iwasm/aot/aot_intrinsic.c.i
 
 core/iwasm/aot/aot_intrinsic.s: core/iwasm/aot/aot_intrinsic.c.s
@@ -196,7 +196,7 @@ core/iwasm/aot/aot_intrinsic.s: core/iwasm/aot/aot_intrinsic.c.s
 
 # target to generate assembly for a file
 core/iwasm/aot/aot_intrinsic.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_intrinsic.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_intrinsic.c.s
 .PHONY : core/iwasm/aot/aot_intrinsic.c.s
 
 core/iwasm/aot/aot_loader.o: core/iwasm/aot/aot_loader.c.o
@@ -204,7 +204,7 @@ core/iwasm/aot/aot_loader.o: core/iwasm/aot/aot_loader.c.o
 
 # target to build an object file
 core/iwasm/aot/aot_loader.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_loader.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_loader.c.o
 .PHONY : core/iwasm/aot/aot_loader.c.o
 
 core/iwasm/aot/aot_loader.i: core/iwasm/aot/aot_loader.c.i
@@ -212,7 +212,7 @@ core/iwasm/aot/aot_loader.i: core/iwasm/aot/aot_loader.c.i
 
 # target to preprocess a source file
 core/iwasm/aot/aot_loader.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_loader.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_loader.c.i
 .PHONY : core/iwasm/aot/aot_loader.c.i
 
 core/iwasm/aot/aot_loader.s: core/iwasm/aot/aot_loader.c.s
@@ -220,7 +220,7 @@ core/iwasm/aot/aot_loader.s: core/iwasm/aot/aot_loader.c.s
 
 # target to generate assembly for a file
 core/iwasm/aot/aot_loader.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_loader.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_loader.c.s
 .PHONY : core/iwasm/aot/aot_loader.c.s
 
 core/iwasm/aot/aot_runtime.o: core/iwasm/aot/aot_runtime.c.o
@@ -228,7 +228,7 @@ core/iwasm/aot/aot_runtime.o: core/iwasm/aot/aot_runtime.c.o
 
 # target to build an object file
 core/iwasm/aot/aot_runtime.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_runtime.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_runtime.c.o
 .PHONY : core/iwasm/aot/aot_runtime.c.o
 
 core/iwasm/aot/aot_runtime.i: core/iwasm/aot/aot_runtime.c.i
@@ -236,7 +236,7 @@ core/iwasm/aot/aot_runtime.i: core/iwasm/aot/aot_runtime.c.i
 
 # target to preprocess a source file
 core/iwasm/aot/aot_runtime.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_runtime.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_runtime.c.i
 .PHONY : core/iwasm/aot/aot_runtime.c.i
 
 core/iwasm/aot/aot_runtime.s: core/iwasm/aot/aot_runtime.c.s
@@ -244,7 +244,7 @@ core/iwasm/aot/aot_runtime.s: core/iwasm/aot/aot_runtime.c.s
 
 # target to generate assembly for a file
 core/iwasm/aot/aot_runtime.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_runtime.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/aot_runtime.c.s
 .PHONY : core/iwasm/aot/aot_runtime.c.s
 
 core/iwasm/aot/arch/aot_reloc_x86_64.o: core/iwasm/aot/arch/aot_reloc_x86_64.c.o
@@ -252,7 +252,7 @@ core/iwasm/aot/arch/aot_reloc_x86_64.o: core/iwasm/aot/arch/aot_reloc_x86_64.c.o
 
 # target to build an object file
 core/iwasm/aot/arch/aot_reloc_x86_64.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/arch/aot_reloc_x86_64.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/arch/aot_reloc_x86_64.c.o
 .PHONY : core/iwasm/aot/arch/aot_reloc_x86_64.c.o
 
 core/iwasm/aot/arch/aot_reloc_x86_64.i: core/iwasm/aot/arch/aot_reloc_x86_64.c.i
@@ -260,7 +260,7 @@ core/iwasm/aot/arch/aot_reloc_x86_64.i: core/iwasm/aot/arch/aot_reloc_x86_64.c.i
 
 # target to preprocess a source file
 core/iwasm/aot/arch/aot_reloc_x86_64.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/arch/aot_reloc_x86_64.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/arch/aot_reloc_x86_64.c.i
 .PHONY : core/iwasm/aot/arch/aot_reloc_x86_64.c.i
 
 core/iwasm/aot/arch/aot_reloc_x86_64.s: core/iwasm/aot/arch/aot_reloc_x86_64.c.s
@@ -268,7 +268,7 @@ core/iwasm/aot/arch/aot_reloc_x86_64.s: core/iwasm/aot/arch/aot_reloc_x86_64.c.s
 
 # target to generate assembly for a file
 core/iwasm/aot/arch/aot_reloc_x86_64.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/arch/aot_reloc_x86_64.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/aot/arch/aot_reloc_x86_64.c.s
 .PHONY : core/iwasm/aot/arch/aot_reloc_x86_64.c.s
 
 core/iwasm/common/arch/invokeNative_em64_simd.o: core/iwasm/common/arch/invokeNative_em64_simd.s.o
@@ -276,7 +276,7 @@ core/iwasm/common/arch/invokeNative_em64_simd.o: core/iwasm/common/arch/invokeNa
 
 # target to build an object file
 core/iwasm/common/arch/invokeNative_em64_simd.s.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/arch/invokeNative_em64_simd.s.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/arch/invokeNative_em64_simd.s.o
 .PHONY : core/iwasm/common/arch/invokeNative_em64_simd.s.o
 
 core/iwasm/common/wasm_application.o: core/iwasm/common/wasm_application.c.o
@@ -284,7 +284,7 @@ core/iwasm/common/wasm_application.o: core/iwasm/common/wasm_application.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_application.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_application.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_application.c.o
 .PHONY : core/iwasm/common/wasm_application.c.o
 
 core/iwasm/common/wasm_application.i: core/iwasm/common/wasm_application.c.i
@@ -292,7 +292,7 @@ core/iwasm/common/wasm_application.i: core/iwasm/common/wasm_application.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_application.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_application.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_application.c.i
 .PHONY : core/iwasm/common/wasm_application.c.i
 
 core/iwasm/common/wasm_application.s: core/iwasm/common/wasm_application.c.s
@@ -300,7 +300,7 @@ core/iwasm/common/wasm_application.s: core/iwasm/common/wasm_application.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_application.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_application.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_application.c.s
 .PHONY : core/iwasm/common/wasm_application.c.s
 
 core/iwasm/common/wasm_blocking_op.o: core/iwasm/common/wasm_blocking_op.c.o
@@ -308,7 +308,7 @@ core/iwasm/common/wasm_blocking_op.o: core/iwasm/common/wasm_blocking_op.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_blocking_op.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_blocking_op.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_blocking_op.c.o
 .PHONY : core/iwasm/common/wasm_blocking_op.c.o
 
 core/iwasm/common/wasm_blocking_op.i: core/iwasm/common/wasm_blocking_op.c.i
@@ -316,7 +316,7 @@ core/iwasm/common/wasm_blocking_op.i: core/iwasm/common/wasm_blocking_op.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_blocking_op.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_blocking_op.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_blocking_op.c.i
 .PHONY : core/iwasm/common/wasm_blocking_op.c.i
 
 core/iwasm/common/wasm_blocking_op.s: core/iwasm/common/wasm_blocking_op.c.s
@@ -324,7 +324,7 @@ core/iwasm/common/wasm_blocking_op.s: core/iwasm/common/wasm_blocking_op.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_blocking_op.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_blocking_op.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_blocking_op.c.s
 .PHONY : core/iwasm/common/wasm_blocking_op.c.s
 
 core/iwasm/common/wasm_c_api.o: core/iwasm/common/wasm_c_api.c.o
@@ -332,7 +332,7 @@ core/iwasm/common/wasm_c_api.o: core/iwasm/common/wasm_c_api.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_c_api.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_c_api.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_c_api.c.o
 .PHONY : core/iwasm/common/wasm_c_api.c.o
 
 core/iwasm/common/wasm_c_api.i: core/iwasm/common/wasm_c_api.c.i
@@ -340,7 +340,7 @@ core/iwasm/common/wasm_c_api.i: core/iwasm/common/wasm_c_api.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_c_api.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_c_api.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_c_api.c.i
 .PHONY : core/iwasm/common/wasm_c_api.c.i
 
 core/iwasm/common/wasm_c_api.s: core/iwasm/common/wasm_c_api.c.s
@@ -348,7 +348,7 @@ core/iwasm/common/wasm_c_api.s: core/iwasm/common/wasm_c_api.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_c_api.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_c_api.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_c_api.c.s
 .PHONY : core/iwasm/common/wasm_c_api.c.s
 
 core/iwasm/common/wasm_exec_env.o: core/iwasm/common/wasm_exec_env.c.o
@@ -356,7 +356,7 @@ core/iwasm/common/wasm_exec_env.o: core/iwasm/common/wasm_exec_env.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_exec_env.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_exec_env.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_exec_env.c.o
 .PHONY : core/iwasm/common/wasm_exec_env.c.o
 
 core/iwasm/common/wasm_exec_env.i: core/iwasm/common/wasm_exec_env.c.i
@@ -364,7 +364,7 @@ core/iwasm/common/wasm_exec_env.i: core/iwasm/common/wasm_exec_env.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_exec_env.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_exec_env.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_exec_env.c.i
 .PHONY : core/iwasm/common/wasm_exec_env.c.i
 
 core/iwasm/common/wasm_exec_env.s: core/iwasm/common/wasm_exec_env.c.s
@@ -372,7 +372,7 @@ core/iwasm/common/wasm_exec_env.s: core/iwasm/common/wasm_exec_env.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_exec_env.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_exec_env.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_exec_env.c.s
 .PHONY : core/iwasm/common/wasm_exec_env.c.s
 
 core/iwasm/common/wasm_loader_common.o: core/iwasm/common/wasm_loader_common.c.o
@@ -380,7 +380,7 @@ core/iwasm/common/wasm_loader_common.o: core/iwasm/common/wasm_loader_common.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_loader_common.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_loader_common.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_loader_common.c.o
 .PHONY : core/iwasm/common/wasm_loader_common.c.o
 
 core/iwasm/common/wasm_loader_common.i: core/iwasm/common/wasm_loader_common.c.i
@@ -388,7 +388,7 @@ core/iwasm/common/wasm_loader_common.i: core/iwasm/common/wasm_loader_common.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_loader_common.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_loader_common.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_loader_common.c.i
 .PHONY : core/iwasm/common/wasm_loader_common.c.i
 
 core/iwasm/common/wasm_loader_common.s: core/iwasm/common/wasm_loader_common.c.s
@@ -396,7 +396,7 @@ core/iwasm/common/wasm_loader_common.s: core/iwasm/common/wasm_loader_common.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_loader_common.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_loader_common.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_loader_common.c.s
 .PHONY : core/iwasm/common/wasm_loader_common.c.s
 
 core/iwasm/common/wasm_memory.o: core/iwasm/common/wasm_memory.c.o
@@ -404,7 +404,7 @@ core/iwasm/common/wasm_memory.o: core/iwasm/common/wasm_memory.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_memory.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_memory.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_memory.c.o
 .PHONY : core/iwasm/common/wasm_memory.c.o
 
 core/iwasm/common/wasm_memory.i: core/iwasm/common/wasm_memory.c.i
@@ -412,7 +412,7 @@ core/iwasm/common/wasm_memory.i: core/iwasm/common/wasm_memory.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_memory.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_memory.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_memory.c.i
 .PHONY : core/iwasm/common/wasm_memory.c.i
 
 core/iwasm/common/wasm_memory.s: core/iwasm/common/wasm_memory.c.s
@@ -420,7 +420,7 @@ core/iwasm/common/wasm_memory.s: core/iwasm/common/wasm_memory.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_memory.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_memory.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_memory.c.s
 .PHONY : core/iwasm/common/wasm_memory.c.s
 
 core/iwasm/common/wasm_native.o: core/iwasm/common/wasm_native.c.o
@@ -428,7 +428,7 @@ core/iwasm/common/wasm_native.o: core/iwasm/common/wasm_native.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_native.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_native.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_native.c.o
 .PHONY : core/iwasm/common/wasm_native.c.o
 
 core/iwasm/common/wasm_native.i: core/iwasm/common/wasm_native.c.i
@@ -436,7 +436,7 @@ core/iwasm/common/wasm_native.i: core/iwasm/common/wasm_native.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_native.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_native.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_native.c.i
 .PHONY : core/iwasm/common/wasm_native.c.i
 
 core/iwasm/common/wasm_native.s: core/iwasm/common/wasm_native.c.s
@@ -444,7 +444,7 @@ core/iwasm/common/wasm_native.s: core/iwasm/common/wasm_native.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_native.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_native.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_native.c.s
 .PHONY : core/iwasm/common/wasm_native.c.s
 
 core/iwasm/common/wasm_runtime_common.o: core/iwasm/common/wasm_runtime_common.c.o
@@ -452,7 +452,7 @@ core/iwasm/common/wasm_runtime_common.o: core/iwasm/common/wasm_runtime_common.c
 
 # target to build an object file
 core/iwasm/common/wasm_runtime_common.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_runtime_common.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_runtime_common.c.o
 .PHONY : core/iwasm/common/wasm_runtime_common.c.o
 
 core/iwasm/common/wasm_runtime_common.i: core/iwasm/common/wasm_runtime_common.c.i
@@ -460,7 +460,7 @@ core/iwasm/common/wasm_runtime_common.i: core/iwasm/common/wasm_runtime_common.c
 
 # target to preprocess a source file
 core/iwasm/common/wasm_runtime_common.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_runtime_common.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_runtime_common.c.i
 .PHONY : core/iwasm/common/wasm_runtime_common.c.i
 
 core/iwasm/common/wasm_runtime_common.s: core/iwasm/common/wasm_runtime_common.c.s
@@ -468,7 +468,7 @@ core/iwasm/common/wasm_runtime_common.s: core/iwasm/common/wasm_runtime_common.c
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_runtime_common.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_runtime_common.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_runtime_common.c.s
 .PHONY : core/iwasm/common/wasm_runtime_common.c.s
 
 core/iwasm/common/wasm_shared_memory.o: core/iwasm/common/wasm_shared_memory.c.o
@@ -476,7 +476,7 @@ core/iwasm/common/wasm_shared_memory.o: core/iwasm/common/wasm_shared_memory.c.o
 
 # target to build an object file
 core/iwasm/common/wasm_shared_memory.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.o
 .PHONY : core/iwasm/common/wasm_shared_memory.c.o
 
 core/iwasm/common/wasm_shared_memory.i: core/iwasm/common/wasm_shared_memory.c.i
@@ -484,7 +484,7 @@ core/iwasm/common/wasm_shared_memory.i: core/iwasm/common/wasm_shared_memory.c.i
 
 # target to preprocess a source file
 core/iwasm/common/wasm_shared_memory.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.i
 .PHONY : core/iwasm/common/wasm_shared_memory.c.i
 
 core/iwasm/common/wasm_shared_memory.s: core/iwasm/common/wasm_shared_memory.c.s
@@ -492,7 +492,7 @@ core/iwasm/common/wasm_shared_memory.s: core/iwasm/common/wasm_shared_memory.c.s
 
 # target to generate assembly for a file
 core/iwasm/common/wasm_shared_memory.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.s
 .PHONY : core/iwasm/common/wasm_shared_memory.c.s
 
 core/iwasm/interpreter/wasm_interp_fast.o: core/iwasm/interpreter/wasm_interp_fast.c.o
@@ -500,7 +500,7 @@ core/iwasm/interpreter/wasm_interp_fast.o: core/iwasm/interpreter/wasm_interp_fa
 
 # target to build an object file
 core/iwasm/interpreter/wasm_interp_fast.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_interp_fast.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_interp_fast.c.o
 .PHONY : core/iwasm/interpreter/wasm_interp_fast.c.o
 
 core/iwasm/interpreter/wasm_interp_fast.i: core/iwasm/interpreter/wasm_interp_fast.c.i
@@ -508,7 +508,7 @@ core/iwasm/interpreter/wasm_interp_fast.i: core/iwasm/interpreter/wasm_interp_fa
 
 # target to preprocess a source file
 core/iwasm/interpreter/wasm_interp_fast.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_interp_fast.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_interp_fast.c.i
 .PHONY : core/iwasm/interpreter/wasm_interp_fast.c.i
 
 core/iwasm/interpreter/wasm_interp_fast.s: core/iwasm/interpreter/wasm_interp_fast.c.s
@@ -516,7 +516,7 @@ core/iwasm/interpreter/wasm_interp_fast.s: core/iwasm/interpreter/wasm_interp_fa
 
 # target to generate assembly for a file
 core/iwasm/interpreter/wasm_interp_fast.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_interp_fast.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_interp_fast.c.s
 .PHONY : core/iwasm/interpreter/wasm_interp_fast.c.s
 
 core/iwasm/interpreter/wasm_loader.o: core/iwasm/interpreter/wasm_loader.c.o
@@ -524,7 +524,7 @@ core/iwasm/interpreter/wasm_loader.o: core/iwasm/interpreter/wasm_loader.c.o
 
 # target to build an object file
 core/iwasm/interpreter/wasm_loader.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_loader.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_loader.c.o
 .PHONY : core/iwasm/interpreter/wasm_loader.c.o
 
 core/iwasm/interpreter/wasm_loader.i: core/iwasm/interpreter/wasm_loader.c.i
@@ -532,7 +532,7 @@ core/iwasm/interpreter/wasm_loader.i: core/iwasm/interpreter/wasm_loader.c.i
 
 # target to preprocess a source file
 core/iwasm/interpreter/wasm_loader.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_loader.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_loader.c.i
 .PHONY : core/iwasm/interpreter/wasm_loader.c.i
 
 core/iwasm/interpreter/wasm_loader.s: core/iwasm/interpreter/wasm_loader.c.s
@@ -540,7 +540,7 @@ core/iwasm/interpreter/wasm_loader.s: core/iwasm/interpreter/wasm_loader.c.s
 
 # target to generate assembly for a file
 core/iwasm/interpreter/wasm_loader.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_loader.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_loader.c.s
 .PHONY : core/iwasm/interpreter/wasm_loader.c.s
 
 core/iwasm/interpreter/wasm_runtime.o: core/iwasm/interpreter/wasm_runtime.c.o
@@ -548,7 +548,7 @@ core/iwasm/interpreter/wasm_runtime.o: core/iwasm/interpreter/wasm_runtime.c.o
 
 # target to build an object file
 core/iwasm/interpreter/wasm_runtime.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_runtime.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_runtime.c.o
 .PHONY : core/iwasm/interpreter/wasm_runtime.c.o
 
 core/iwasm/interpreter/wasm_runtime.i: core/iwasm/interpreter/wasm_runtime.c.i
@@ -556,7 +556,7 @@ core/iwasm/interpreter/wasm_runtime.i: core/iwasm/interpreter/wasm_runtime.c.i
 
 # target to preprocess a source file
 core/iwasm/interpreter/wasm_runtime.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_runtime.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_runtime.c.i
 .PHONY : core/iwasm/interpreter/wasm_runtime.c.i
 
 core/iwasm/interpreter/wasm_runtime.s: core/iwasm/interpreter/wasm_runtime.c.s
@@ -564,7 +564,7 @@ core/iwasm/interpreter/wasm_runtime.s: core/iwasm/interpreter/wasm_runtime.c.s
 
 # target to generate assembly for a file
 core/iwasm/interpreter/wasm_runtime.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_runtime.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/interpreter/wasm_runtime.c.s
 .PHONY : core/iwasm/interpreter/wasm_runtime.c.s
 
 core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.o: core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o
@@ -572,7 +572,7 @@ core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.o: core/iwasm/libraries/l
 
 # target to build an object file
 core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o
 .PHONY : core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o
 
 core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.i: core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i
@@ -580,7 +580,7 @@ core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.i: core/iwasm/libraries/l
 
 # target to preprocess a source file
 core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i
 .PHONY : core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i
 
 core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.s: core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s
@@ -588,7 +588,7 @@ core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.s: core/iwasm/libraries/l
 
 # target to generate assembly for a file
 core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s
 .PHONY : core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s
 
 core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.o: core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o
@@ -596,7 +596,7 @@ core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.o: core/iwasm/libraries/libc-wa
 
 # target to build an object file
 core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o
 .PHONY : core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o
 
 core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.i: core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i
@@ -604,7 +604,7 @@ core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.i: core/iwasm/libraries/libc-wa
 
 # target to preprocess a source file
 core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i
 .PHONY : core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i
 
 core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.s: core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s
@@ -612,7 +612,7 @@ core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.s: core/iwasm/libraries/libc-wa
 
 # target to generate assembly for a file
 core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s
 .PHONY : core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.o: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o
@@ -620,7 +620,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.o: co
 
 # target to build an object file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.i: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i
@@ -628,7 +628,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.i: co
 
 # target to preprocess a source file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.s: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s
@@ -636,7 +636,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.s: co
 
 # target to generate assembly for a file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.o: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o
@@ -644,7 +644,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.o: core/iwa
 
 # target to build an object file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.i: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i
@@ -652,7 +652,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.i: core/iwa
 
 # target to preprocess a source file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.s: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s
@@ -660,7 +660,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.s: core/iwa
 
 # target to generate assembly for a file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.o: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o
@@ -668,7 +668,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.o: core/iw
 
 # target to build an object file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.i: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i
@@ -676,7 +676,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.i: core/iw
 
 # target to preprocess a source file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.s: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s
@@ -684,7 +684,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.s: core/iw
 
 # target to generate assembly for a file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.o: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o
@@ -692,7 +692,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.o: core/iwasm
 
 # target to build an object file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.i: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i
@@ -700,7 +700,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.i: core/iwasm
 
 # target to preprocess a source file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i
 
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.s: core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s
@@ -708,7 +708,7 @@ core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.s: core/iwasm
 
 # target to generate assembly for a file
 core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s
 .PHONY : core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s
 
 core/shared/mem-alloc/ems/ems_alloc.o: core/shared/mem-alloc/ems/ems_alloc.c.o
@@ -716,7 +716,7 @@ core/shared/mem-alloc/ems/ems_alloc.o: core/shared/mem-alloc/ems/ems_alloc.c.o
 
 # target to build an object file
 core/shared/mem-alloc/ems/ems_alloc.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_alloc.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_alloc.c.o
 .PHONY : core/shared/mem-alloc/ems/ems_alloc.c.o
 
 core/shared/mem-alloc/ems/ems_alloc.i: core/shared/mem-alloc/ems/ems_alloc.c.i
@@ -724,7 +724,7 @@ core/shared/mem-alloc/ems/ems_alloc.i: core/shared/mem-alloc/ems/ems_alloc.c.i
 
 # target to preprocess a source file
 core/shared/mem-alloc/ems/ems_alloc.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_alloc.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_alloc.c.i
 .PHONY : core/shared/mem-alloc/ems/ems_alloc.c.i
 
 core/shared/mem-alloc/ems/ems_alloc.s: core/shared/mem-alloc/ems/ems_alloc.c.s
@@ -732,7 +732,7 @@ core/shared/mem-alloc/ems/ems_alloc.s: core/shared/mem-alloc/ems/ems_alloc.c.s
 
 # target to generate assembly for a file
 core/shared/mem-alloc/ems/ems_alloc.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_alloc.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_alloc.c.s
 .PHONY : core/shared/mem-alloc/ems/ems_alloc.c.s
 
 core/shared/mem-alloc/ems/ems_gc.o: core/shared/mem-alloc/ems/ems_gc.c.o
@@ -740,7 +740,7 @@ core/shared/mem-alloc/ems/ems_gc.o: core/shared/mem-alloc/ems/ems_gc.c.o
 
 # target to build an object file
 core/shared/mem-alloc/ems/ems_gc.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_gc.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_gc.c.o
 .PHONY : core/shared/mem-alloc/ems/ems_gc.c.o
 
 core/shared/mem-alloc/ems/ems_gc.i: core/shared/mem-alloc/ems/ems_gc.c.i
@@ -748,7 +748,7 @@ core/shared/mem-alloc/ems/ems_gc.i: core/shared/mem-alloc/ems/ems_gc.c.i
 
 # target to preprocess a source file
 core/shared/mem-alloc/ems/ems_gc.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_gc.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_gc.c.i
 .PHONY : core/shared/mem-alloc/ems/ems_gc.c.i
 
 core/shared/mem-alloc/ems/ems_gc.s: core/shared/mem-alloc/ems/ems_gc.c.s
@@ -756,7 +756,7 @@ core/shared/mem-alloc/ems/ems_gc.s: core/shared/mem-alloc/ems/ems_gc.c.s
 
 # target to generate assembly for a file
 core/shared/mem-alloc/ems/ems_gc.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_gc.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_gc.c.s
 .PHONY : core/shared/mem-alloc/ems/ems_gc.c.s
 
 core/shared/mem-alloc/ems/ems_hmu.o: core/shared/mem-alloc/ems/ems_hmu.c.o
@@ -764,7 +764,7 @@ core/shared/mem-alloc/ems/ems_hmu.o: core/shared/mem-alloc/ems/ems_hmu.c.o
 
 # target to build an object file
 core/shared/mem-alloc/ems/ems_hmu.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_hmu.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_hmu.c.o
 .PHONY : core/shared/mem-alloc/ems/ems_hmu.c.o
 
 core/shared/mem-alloc/ems/ems_hmu.i: core/shared/mem-alloc/ems/ems_hmu.c.i
@@ -772,7 +772,7 @@ core/shared/mem-alloc/ems/ems_hmu.i: core/shared/mem-alloc/ems/ems_hmu.c.i
 
 # target to preprocess a source file
 core/shared/mem-alloc/ems/ems_hmu.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_hmu.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_hmu.c.i
 .PHONY : core/shared/mem-alloc/ems/ems_hmu.c.i
 
 core/shared/mem-alloc/ems/ems_hmu.s: core/shared/mem-alloc/ems/ems_hmu.c.s
@@ -780,7 +780,7 @@ core/shared/mem-alloc/ems/ems_hmu.s: core/shared/mem-alloc/ems/ems_hmu.c.s
 
 # target to generate assembly for a file
 core/shared/mem-alloc/ems/ems_hmu.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_hmu.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_hmu.c.s
 .PHONY : core/shared/mem-alloc/ems/ems_hmu.c.s
 
 core/shared/mem-alloc/ems/ems_kfc.o: core/shared/mem-alloc/ems/ems_kfc.c.o
@@ -788,7 +788,7 @@ core/shared/mem-alloc/ems/ems_kfc.o: core/shared/mem-alloc/ems/ems_kfc.c.o
 
 # target to build an object file
 core/shared/mem-alloc/ems/ems_kfc.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_kfc.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_kfc.c.o
 .PHONY : core/shared/mem-alloc/ems/ems_kfc.c.o
 
 core/shared/mem-alloc/ems/ems_kfc.i: core/shared/mem-alloc/ems/ems_kfc.c.i
@@ -796,7 +796,7 @@ core/shared/mem-alloc/ems/ems_kfc.i: core/shared/mem-alloc/ems/ems_kfc.c.i
 
 # target to preprocess a source file
 core/shared/mem-alloc/ems/ems_kfc.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_kfc.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_kfc.c.i
 .PHONY : core/shared/mem-alloc/ems/ems_kfc.c.i
 
 core/shared/mem-alloc/ems/ems_kfc.s: core/shared/mem-alloc/ems/ems_kfc.c.s
@@ -804,7 +804,7 @@ core/shared/mem-alloc/ems/ems_kfc.s: core/shared/mem-alloc/ems/ems_kfc.c.s
 
 # target to generate assembly for a file
 core/shared/mem-alloc/ems/ems_kfc.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_kfc.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/ems/ems_kfc.c.s
 .PHONY : core/shared/mem-alloc/ems/ems_kfc.c.s
 
 core/shared/mem-alloc/mem_alloc.o: core/shared/mem-alloc/mem_alloc.c.o
@@ -812,7 +812,7 @@ core/shared/mem-alloc/mem_alloc.o: core/shared/mem-alloc/mem_alloc.c.o
 
 # target to build an object file
 core/shared/mem-alloc/mem_alloc.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/mem_alloc.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/mem_alloc.c.o
 .PHONY : core/shared/mem-alloc/mem_alloc.c.o
 
 core/shared/mem-alloc/mem_alloc.i: core/shared/mem-alloc/mem_alloc.c.i
@@ -820,7 +820,7 @@ core/shared/mem-alloc/mem_alloc.i: core/shared/mem-alloc/mem_alloc.c.i
 
 # target to preprocess a source file
 core/shared/mem-alloc/mem_alloc.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/mem_alloc.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/mem_alloc.c.i
 .PHONY : core/shared/mem-alloc/mem_alloc.c.i
 
 core/shared/mem-alloc/mem_alloc.s: core/shared/mem-alloc/mem_alloc.c.s
@@ -828,7 +828,7 @@ core/shared/mem-alloc/mem_alloc.s: core/shared/mem-alloc/mem_alloc.c.s
 
 # target to generate assembly for a file
 core/shared/mem-alloc/mem_alloc.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/mem_alloc.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/mem-alloc/mem_alloc.c.s
 .PHONY : core/shared/mem-alloc/mem_alloc.c.s
 
 core/shared/platform/common/libc-util/libc_errno.o: core/shared/platform/common/libc-util/libc_errno.c.o
@@ -836,7 +836,7 @@ core/shared/platform/common/libc-util/libc_errno.o: core/shared/platform/common/
 
 # target to build an object file
 core/shared/platform/common/libc-util/libc_errno.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/libc-util/libc_errno.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/libc-util/libc_errno.c.o
 .PHONY : core/shared/platform/common/libc-util/libc_errno.c.o
 
 core/shared/platform/common/libc-util/libc_errno.i: core/shared/platform/common/libc-util/libc_errno.c.i
@@ -844,7 +844,7 @@ core/shared/platform/common/libc-util/libc_errno.i: core/shared/platform/common/
 
 # target to preprocess a source file
 core/shared/platform/common/libc-util/libc_errno.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/libc-util/libc_errno.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/libc-util/libc_errno.c.i
 .PHONY : core/shared/platform/common/libc-util/libc_errno.c.i
 
 core/shared/platform/common/libc-util/libc_errno.s: core/shared/platform/common/libc-util/libc_errno.c.s
@@ -852,7 +852,7 @@ core/shared/platform/common/libc-util/libc_errno.s: core/shared/platform/common/
 
 # target to generate assembly for a file
 core/shared/platform/common/libc-util/libc_errno.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/libc-util/libc_errno.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/libc-util/libc_errno.c.s
 .PHONY : core/shared/platform/common/libc-util/libc_errno.c.s
 
 core/shared/platform/common/posix/posix_blocking_op.o: core/shared/platform/common/posix/posix_blocking_op.c.o
@@ -860,7 +860,7 @@ core/shared/platform/common/posix/posix_blocking_op.o: core/shared/platform/comm
 
 # target to build an object file
 core/shared/platform/common/posix/posix_blocking_op.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_blocking_op.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_blocking_op.c.o
 .PHONY : core/shared/platform/common/posix/posix_blocking_op.c.o
 
 core/shared/platform/common/posix/posix_blocking_op.i: core/shared/platform/common/posix/posix_blocking_op.c.i
@@ -868,7 +868,7 @@ core/shared/platform/common/posix/posix_blocking_op.i: core/shared/platform/comm
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_blocking_op.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_blocking_op.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_blocking_op.c.i
 .PHONY : core/shared/platform/common/posix/posix_blocking_op.c.i
 
 core/shared/platform/common/posix/posix_blocking_op.s: core/shared/platform/common/posix/posix_blocking_op.c.s
@@ -876,7 +876,7 @@ core/shared/platform/common/posix/posix_blocking_op.s: core/shared/platform/comm
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_blocking_op.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_blocking_op.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_blocking_op.c.s
 .PHONY : core/shared/platform/common/posix/posix_blocking_op.c.s
 
 core/shared/platform/common/posix/posix_clock.o: core/shared/platform/common/posix/posix_clock.c.o
@@ -884,7 +884,7 @@ core/shared/platform/common/posix/posix_clock.o: core/shared/platform/common/pos
 
 # target to build an object file
 core/shared/platform/common/posix/posix_clock.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_clock.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_clock.c.o
 .PHONY : core/shared/platform/common/posix/posix_clock.c.o
 
 core/shared/platform/common/posix/posix_clock.i: core/shared/platform/common/posix/posix_clock.c.i
@@ -892,7 +892,7 @@ core/shared/platform/common/posix/posix_clock.i: core/shared/platform/common/pos
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_clock.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_clock.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_clock.c.i
 .PHONY : core/shared/platform/common/posix/posix_clock.c.i
 
 core/shared/platform/common/posix/posix_clock.s: core/shared/platform/common/posix/posix_clock.c.s
@@ -900,7 +900,7 @@ core/shared/platform/common/posix/posix_clock.s: core/shared/platform/common/pos
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_clock.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_clock.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_clock.c.s
 .PHONY : core/shared/platform/common/posix/posix_clock.c.s
 
 core/shared/platform/common/posix/posix_file.o: core/shared/platform/common/posix/posix_file.c.o
@@ -908,7 +908,7 @@ core/shared/platform/common/posix/posix_file.o: core/shared/platform/common/posi
 
 # target to build an object file
 core/shared/platform/common/posix/posix_file.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_file.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_file.c.o
 .PHONY : core/shared/platform/common/posix/posix_file.c.o
 
 core/shared/platform/common/posix/posix_file.i: core/shared/platform/common/posix/posix_file.c.i
@@ -916,7 +916,7 @@ core/shared/platform/common/posix/posix_file.i: core/shared/platform/common/posi
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_file.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_file.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_file.c.i
 .PHONY : core/shared/platform/common/posix/posix_file.c.i
 
 core/shared/platform/common/posix/posix_file.s: core/shared/platform/common/posix/posix_file.c.s
@@ -924,7 +924,7 @@ core/shared/platform/common/posix/posix_file.s: core/shared/platform/common/posi
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_file.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_file.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_file.c.s
 .PHONY : core/shared/platform/common/posix/posix_file.c.s
 
 core/shared/platform/common/posix/posix_malloc.o: core/shared/platform/common/posix/posix_malloc.c.o
@@ -932,7 +932,7 @@ core/shared/platform/common/posix/posix_malloc.o: core/shared/platform/common/po
 
 # target to build an object file
 core/shared/platform/common/posix/posix_malloc.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_malloc.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_malloc.c.o
 .PHONY : core/shared/platform/common/posix/posix_malloc.c.o
 
 core/shared/platform/common/posix/posix_malloc.i: core/shared/platform/common/posix/posix_malloc.c.i
@@ -940,7 +940,7 @@ core/shared/platform/common/posix/posix_malloc.i: core/shared/platform/common/po
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_malloc.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_malloc.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_malloc.c.i
 .PHONY : core/shared/platform/common/posix/posix_malloc.c.i
 
 core/shared/platform/common/posix/posix_malloc.s: core/shared/platform/common/posix/posix_malloc.c.s
@@ -948,7 +948,7 @@ core/shared/platform/common/posix/posix_malloc.s: core/shared/platform/common/po
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_malloc.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_malloc.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_malloc.c.s
 .PHONY : core/shared/platform/common/posix/posix_malloc.c.s
 
 core/shared/platform/common/posix/posix_memmap.o: core/shared/platform/common/posix/posix_memmap.c.o
@@ -956,7 +956,7 @@ core/shared/platform/common/posix/posix_memmap.o: core/shared/platform/common/po
 
 # target to build an object file
 core/shared/platform/common/posix/posix_memmap.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_memmap.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_memmap.c.o
 .PHONY : core/shared/platform/common/posix/posix_memmap.c.o
 
 core/shared/platform/common/posix/posix_memmap.i: core/shared/platform/common/posix/posix_memmap.c.i
@@ -964,7 +964,7 @@ core/shared/platform/common/posix/posix_memmap.i: core/shared/platform/common/po
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_memmap.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_memmap.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_memmap.c.i
 .PHONY : core/shared/platform/common/posix/posix_memmap.c.i
 
 core/shared/platform/common/posix/posix_memmap.s: core/shared/platform/common/posix/posix_memmap.c.s
@@ -972,7 +972,7 @@ core/shared/platform/common/posix/posix_memmap.s: core/shared/platform/common/po
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_memmap.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_memmap.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_memmap.c.s
 .PHONY : core/shared/platform/common/posix/posix_memmap.c.s
 
 core/shared/platform/common/posix/posix_sleep.o: core/shared/platform/common/posix/posix_sleep.c.o
@@ -980,7 +980,7 @@ core/shared/platform/common/posix/posix_sleep.o: core/shared/platform/common/pos
 
 # target to build an object file
 core/shared/platform/common/posix/posix_sleep.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_sleep.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_sleep.c.o
 .PHONY : core/shared/platform/common/posix/posix_sleep.c.o
 
 core/shared/platform/common/posix/posix_sleep.i: core/shared/platform/common/posix/posix_sleep.c.i
@@ -988,7 +988,7 @@ core/shared/platform/common/posix/posix_sleep.i: core/shared/platform/common/pos
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_sleep.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_sleep.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_sleep.c.i
 .PHONY : core/shared/platform/common/posix/posix_sleep.c.i
 
 core/shared/platform/common/posix/posix_sleep.s: core/shared/platform/common/posix/posix_sleep.c.s
@@ -996,7 +996,7 @@ core/shared/platform/common/posix/posix_sleep.s: core/shared/platform/common/pos
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_sleep.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_sleep.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_sleep.c.s
 .PHONY : core/shared/platform/common/posix/posix_sleep.c.s
 
 core/shared/platform/common/posix/posix_socket.o: core/shared/platform/common/posix/posix_socket.c.o
@@ -1004,7 +1004,7 @@ core/shared/platform/common/posix/posix_socket.o: core/shared/platform/common/po
 
 # target to build an object file
 core/shared/platform/common/posix/posix_socket.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_socket.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_socket.c.o
 .PHONY : core/shared/platform/common/posix/posix_socket.c.o
 
 core/shared/platform/common/posix/posix_socket.i: core/shared/platform/common/posix/posix_socket.c.i
@@ -1012,7 +1012,7 @@ core/shared/platform/common/posix/posix_socket.i: core/shared/platform/common/po
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_socket.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_socket.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_socket.c.i
 .PHONY : core/shared/platform/common/posix/posix_socket.c.i
 
 core/shared/platform/common/posix/posix_socket.s: core/shared/platform/common/posix/posix_socket.c.s
@@ -1020,7 +1020,7 @@ core/shared/platform/common/posix/posix_socket.s: core/shared/platform/common/po
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_socket.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_socket.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_socket.c.s
 .PHONY : core/shared/platform/common/posix/posix_socket.c.s
 
 core/shared/platform/common/posix/posix_thread.o: core/shared/platform/common/posix/posix_thread.c.o
@@ -1028,7 +1028,7 @@ core/shared/platform/common/posix/posix_thread.o: core/shared/platform/common/po
 
 # target to build an object file
 core/shared/platform/common/posix/posix_thread.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_thread.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_thread.c.o
 .PHONY : core/shared/platform/common/posix/posix_thread.c.o
 
 core/shared/platform/common/posix/posix_thread.i: core/shared/platform/common/posix/posix_thread.c.i
@@ -1036,7 +1036,7 @@ core/shared/platform/common/posix/posix_thread.i: core/shared/platform/common/po
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_thread.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_thread.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_thread.c.i
 .PHONY : core/shared/platform/common/posix/posix_thread.c.i
 
 core/shared/platform/common/posix/posix_thread.s: core/shared/platform/common/posix/posix_thread.c.s
@@ -1044,7 +1044,7 @@ core/shared/platform/common/posix/posix_thread.s: core/shared/platform/common/po
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_thread.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_thread.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_thread.c.s
 .PHONY : core/shared/platform/common/posix/posix_thread.c.s
 
 core/shared/platform/common/posix/posix_time.o: core/shared/platform/common/posix/posix_time.c.o
@@ -1052,7 +1052,7 @@ core/shared/platform/common/posix/posix_time.o: core/shared/platform/common/posi
 
 # target to build an object file
 core/shared/platform/common/posix/posix_time.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_time.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_time.c.o
 .PHONY : core/shared/platform/common/posix/posix_time.c.o
 
 core/shared/platform/common/posix/posix_time.i: core/shared/platform/common/posix/posix_time.c.i
@@ -1060,7 +1060,7 @@ core/shared/platform/common/posix/posix_time.i: core/shared/platform/common/posi
 
 # target to preprocess a source file
 core/shared/platform/common/posix/posix_time.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_time.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_time.c.i
 .PHONY : core/shared/platform/common/posix/posix_time.c.i
 
 core/shared/platform/common/posix/posix_time.s: core/shared/platform/common/posix/posix_time.c.s
@@ -1068,7 +1068,7 @@ core/shared/platform/common/posix/posix_time.s: core/shared/platform/common/posi
 
 # target to generate assembly for a file
 core/shared/platform/common/posix/posix_time.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_time.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/common/posix/posix_time.c.s
 .PHONY : core/shared/platform/common/posix/posix_time.c.s
 
 core/shared/platform/linux/platform_init.o: core/shared/platform/linux/platform_init.c.o
@@ -1076,7 +1076,7 @@ core/shared/platform/linux/platform_init.o: core/shared/platform/linux/platform_
 
 # target to build an object file
 core/shared/platform/linux/platform_init.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/linux/platform_init.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/linux/platform_init.c.o
 .PHONY : core/shared/platform/linux/platform_init.c.o
 
 core/shared/platform/linux/platform_init.i: core/shared/platform/linux/platform_init.c.i
@@ -1084,7 +1084,7 @@ core/shared/platform/linux/platform_init.i: core/shared/platform/linux/platform_
 
 # target to preprocess a source file
 core/shared/platform/linux/platform_init.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/linux/platform_init.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/linux/platform_init.c.i
 .PHONY : core/shared/platform/linux/platform_init.c.i
 
 core/shared/platform/linux/platform_init.s: core/shared/platform/linux/platform_init.c.s
@@ -1092,7 +1092,7 @@ core/shared/platform/linux/platform_init.s: core/shared/platform/linux/platform_
 
 # target to generate assembly for a file
 core/shared/platform/linux/platform_init.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/linux/platform_init.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/platform/linux/platform_init.c.s
 .PHONY : core/shared/platform/linux/platform_init.c.s
 
 core/shared/utils/bh_assert.o: core/shared/utils/bh_assert.c.o
@@ -1100,7 +1100,7 @@ core/shared/utils/bh_assert.o: core/shared/utils/bh_assert.c.o
 
 # target to build an object file
 core/shared/utils/bh_assert.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_assert.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_assert.c.o
 .PHONY : core/shared/utils/bh_assert.c.o
 
 core/shared/utils/bh_assert.i: core/shared/utils/bh_assert.c.i
@@ -1108,7 +1108,7 @@ core/shared/utils/bh_assert.i: core/shared/utils/bh_assert.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_assert.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_assert.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_assert.c.i
 .PHONY : core/shared/utils/bh_assert.c.i
 
 core/shared/utils/bh_assert.s: core/shared/utils/bh_assert.c.s
@@ -1116,7 +1116,7 @@ core/shared/utils/bh_assert.s: core/shared/utils/bh_assert.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_assert.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_assert.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_assert.c.s
 .PHONY : core/shared/utils/bh_assert.c.s
 
 core/shared/utils/bh_bitmap.o: core/shared/utils/bh_bitmap.c.o
@@ -1124,7 +1124,7 @@ core/shared/utils/bh_bitmap.o: core/shared/utils/bh_bitmap.c.o
 
 # target to build an object file
 core/shared/utils/bh_bitmap.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_bitmap.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_bitmap.c.o
 .PHONY : core/shared/utils/bh_bitmap.c.o
 
 core/shared/utils/bh_bitmap.i: core/shared/utils/bh_bitmap.c.i
@@ -1132,7 +1132,7 @@ core/shared/utils/bh_bitmap.i: core/shared/utils/bh_bitmap.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_bitmap.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_bitmap.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_bitmap.c.i
 .PHONY : core/shared/utils/bh_bitmap.c.i
 
 core/shared/utils/bh_bitmap.s: core/shared/utils/bh_bitmap.c.s
@@ -1140,7 +1140,7 @@ core/shared/utils/bh_bitmap.s: core/shared/utils/bh_bitmap.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_bitmap.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_bitmap.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_bitmap.c.s
 .PHONY : core/shared/utils/bh_bitmap.c.s
 
 core/shared/utils/bh_common.o: core/shared/utils/bh_common.c.o
@@ -1148,7 +1148,7 @@ core/shared/utils/bh_common.o: core/shared/utils/bh_common.c.o
 
 # target to build an object file
 core/shared/utils/bh_common.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_common.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_common.c.o
 .PHONY : core/shared/utils/bh_common.c.o
 
 core/shared/utils/bh_common.i: core/shared/utils/bh_common.c.i
@@ -1156,7 +1156,7 @@ core/shared/utils/bh_common.i: core/shared/utils/bh_common.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_common.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_common.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_common.c.i
 .PHONY : core/shared/utils/bh_common.c.i
 
 core/shared/utils/bh_common.s: core/shared/utils/bh_common.c.s
@@ -1164,7 +1164,7 @@ core/shared/utils/bh_common.s: core/shared/utils/bh_common.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_common.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_common.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_common.c.s
 .PHONY : core/shared/utils/bh_common.c.s
 
 core/shared/utils/bh_hashmap.o: core/shared/utils/bh_hashmap.c.o
@@ -1172,7 +1172,7 @@ core/shared/utils/bh_hashmap.o: core/shared/utils/bh_hashmap.c.o
 
 # target to build an object file
 core/shared/utils/bh_hashmap.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_hashmap.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_hashmap.c.o
 .PHONY : core/shared/utils/bh_hashmap.c.o
 
 core/shared/utils/bh_hashmap.i: core/shared/utils/bh_hashmap.c.i
@@ -1180,7 +1180,7 @@ core/shared/utils/bh_hashmap.i: core/shared/utils/bh_hashmap.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_hashmap.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_hashmap.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_hashmap.c.i
 .PHONY : core/shared/utils/bh_hashmap.c.i
 
 core/shared/utils/bh_hashmap.s: core/shared/utils/bh_hashmap.c.s
@@ -1188,7 +1188,7 @@ core/shared/utils/bh_hashmap.s: core/shared/utils/bh_hashmap.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_hashmap.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_hashmap.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_hashmap.c.s
 .PHONY : core/shared/utils/bh_hashmap.c.s
 
 core/shared/utils/bh_leb128.o: core/shared/utils/bh_leb128.c.o
@@ -1196,7 +1196,7 @@ core/shared/utils/bh_leb128.o: core/shared/utils/bh_leb128.c.o
 
 # target to build an object file
 core/shared/utils/bh_leb128.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_leb128.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_leb128.c.o
 .PHONY : core/shared/utils/bh_leb128.c.o
 
 core/shared/utils/bh_leb128.i: core/shared/utils/bh_leb128.c.i
@@ -1204,7 +1204,7 @@ core/shared/utils/bh_leb128.i: core/shared/utils/bh_leb128.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_leb128.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_leb128.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_leb128.c.i
 .PHONY : core/shared/utils/bh_leb128.c.i
 
 core/shared/utils/bh_leb128.s: core/shared/utils/bh_leb128.c.s
@@ -1212,7 +1212,7 @@ core/shared/utils/bh_leb128.s: core/shared/utils/bh_leb128.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_leb128.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_leb128.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_leb128.c.s
 .PHONY : core/shared/utils/bh_leb128.c.s
 
 core/shared/utils/bh_list.o: core/shared/utils/bh_list.c.o
@@ -1220,7 +1220,7 @@ core/shared/utils/bh_list.o: core/shared/utils/bh_list.c.o
 
 # target to build an object file
 core/shared/utils/bh_list.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_list.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_list.c.o
 .PHONY : core/shared/utils/bh_list.c.o
 
 core/shared/utils/bh_list.i: core/shared/utils/bh_list.c.i
@@ -1228,7 +1228,7 @@ core/shared/utils/bh_list.i: core/shared/utils/bh_list.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_list.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_list.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_list.c.i
 .PHONY : core/shared/utils/bh_list.c.i
 
 core/shared/utils/bh_list.s: core/shared/utils/bh_list.c.s
@@ -1236,7 +1236,7 @@ core/shared/utils/bh_list.s: core/shared/utils/bh_list.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_list.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_list.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_list.c.s
 .PHONY : core/shared/utils/bh_list.c.s
 
 core/shared/utils/bh_log.o: core/shared/utils/bh_log.c.o
@@ -1244,7 +1244,7 @@ core/shared/utils/bh_log.o: core/shared/utils/bh_log.c.o
 
 # target to build an object file
 core/shared/utils/bh_log.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_log.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_log.c.o
 .PHONY : core/shared/utils/bh_log.c.o
 
 core/shared/utils/bh_log.i: core/shared/utils/bh_log.c.i
@@ -1252,7 +1252,7 @@ core/shared/utils/bh_log.i: core/shared/utils/bh_log.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_log.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_log.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_log.c.i
 .PHONY : core/shared/utils/bh_log.c.i
 
 core/shared/utils/bh_log.s: core/shared/utils/bh_log.c.s
@@ -1260,7 +1260,7 @@ core/shared/utils/bh_log.s: core/shared/utils/bh_log.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_log.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_log.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_log.c.s
 .PHONY : core/shared/utils/bh_log.c.s
 
 core/shared/utils/bh_queue.o: core/shared/utils/bh_queue.c.o
@@ -1268,7 +1268,7 @@ core/shared/utils/bh_queue.o: core/shared/utils/bh_queue.c.o
 
 # target to build an object file
 core/shared/utils/bh_queue.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_queue.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_queue.c.o
 .PHONY : core/shared/utils/bh_queue.c.o
 
 core/shared/utils/bh_queue.i: core/shared/utils/bh_queue.c.i
@@ -1276,7 +1276,7 @@ core/shared/utils/bh_queue.i: core/shared/utils/bh_queue.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_queue.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_queue.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_queue.c.i
 .PHONY : core/shared/utils/bh_queue.c.i
 
 core/shared/utils/bh_queue.s: core/shared/utils/bh_queue.c.s
@@ -1284,7 +1284,7 @@ core/shared/utils/bh_queue.s: core/shared/utils/bh_queue.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_queue.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_queue.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_queue.c.s
 .PHONY : core/shared/utils/bh_queue.c.s
 
 core/shared/utils/bh_vector.o: core/shared/utils/bh_vector.c.o
@@ -1292,7 +1292,7 @@ core/shared/utils/bh_vector.o: core/shared/utils/bh_vector.c.o
 
 # target to build an object file
 core/shared/utils/bh_vector.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_vector.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_vector.c.o
 .PHONY : core/shared/utils/bh_vector.c.o
 
 core/shared/utils/bh_vector.i: core/shared/utils/bh_vector.c.i
@@ -1300,7 +1300,7 @@ core/shared/utils/bh_vector.i: core/shared/utils/bh_vector.c.i
 
 # target to preprocess a source file
 core/shared/utils/bh_vector.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_vector.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_vector.c.i
 .PHONY : core/shared/utils/bh_vector.c.i
 
 core/shared/utils/bh_vector.s: core/shared/utils/bh_vector.c.s
@@ -1308,7 +1308,7 @@ core/shared/utils/bh_vector.s: core/shared/utils/bh_vector.c.s
 
 # target to generate assembly for a file
 core/shared/utils/bh_vector.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_vector.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/bh_vector.c.s
 .PHONY : core/shared/utils/bh_vector.c.s
 
 core/shared/utils/runtime_timer.o: core/shared/utils/runtime_timer.c.o
@@ -1316,7 +1316,7 @@ core/shared/utils/runtime_timer.o: core/shared/utils/runtime_timer.c.o
 
 # target to build an object file
 core/shared/utils/runtime_timer.c.o:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/runtime_timer.c.o
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/runtime_timer.c.o
 .PHONY : core/shared/utils/runtime_timer.c.o
 
 core/shared/utils/runtime_timer.i: core/shared/utils/runtime_timer.c.i
@@ -1324,7 +1324,7 @@ core/shared/utils/runtime_timer.i: core/shared/utils/runtime_timer.c.i
 
 # target to preprocess a source file
 core/shared/utils/runtime_timer.c.i:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/runtime_timer.c.i
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/runtime_timer.c.i
 .PHONY : core/shared/utils/runtime_timer.c.i
 
 core/shared/utils/runtime_timer.s: core/shared/utils/runtime_timer.c.s
@@ -1332,7 +1332,7 @@ core/shared/utils/runtime_timer.s: core/shared/utils/runtime_timer.c.s
 
 # target to generate assembly for a file
 core/shared/utils/runtime_timer.c.s:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/runtime_timer.c.s
+	cd /home/eb/fyp/helloworld/build && $(MAKE) $(MAKESILENT) -f _deps/wamr_ext-build/CMakeFiles/vmlib.dir/build.make _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/shared/utils/runtime_timer.c.s
 .PHONY : core/shared/utils/runtime_timer.c.s
 
 # Help Target
@@ -1504,6 +1504,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/eb/fyp/helloworld/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

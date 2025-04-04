@@ -1,4 +1,4 @@
-# Install script for directory: /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/simde-subbuild
+# Install script for directory: /home/eb/fyp/helloworld/build/_deps/simde-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/simde-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/eb/fyp/helloworld/build/_deps/simde-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

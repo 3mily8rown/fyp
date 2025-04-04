@@ -1,8 +1,8 @@
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o: \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_api_extension.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_internal.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_api_extension.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_internal.h \
   /usr/lib/llvm-18/lib/clang/18/include/inttypes.h \
   /usr/include/inttypes.h /usr/include/features.h \
   /usr/include/features-time64.h \
@@ -188,9 +188,9 @@ CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posi
   /usr/include/x86_64-linux-gnu/bits/resource.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
   /usr/include/setjmp.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/../../../config.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_wasi_types.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/../../../config.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_wasi_types.h \
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_ptrdiff_t.h \
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_offsetof.h \
   /usr/lib/llvm-18/lib/clang/18/include/stdatomic.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.h
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.h

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild
 
 # Utility rule file for wamr_ext-populate.
 
@@ -77,60 +77,60 @@ CMakeFiles/wamr_ext-populate-complete: wamr_ext-populate-prefix/src/wamr_ext-pop
 CMakeFiles/wamr_ext-populate-complete: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-build
 CMakeFiles/wamr_ext-populate-complete: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-install
 CMakeFiles/wamr_ext-populate-complete: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'wamr_ext-populate'"
-	/usr/bin/cmake -E make_directory /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles
-	/usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles/wamr_ext-populate-complete
-	/usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'wamr_ext-populate'"
+	/usr/bin/cmake -E make_directory /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles
+	/usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles/wamr_ext-populate-complete
+	/usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-done
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update:
 .PHONY : wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-build: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'wamr_ext-populate'"
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'wamr_ext-populate'"
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-build
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-configure: wamr_ext-populate-prefix/tmp/wamr_ext-populate-cfgcmd.txt
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-configure: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'wamr_ext-populate'"
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'wamr_ext-populate'"
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-configure
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-download: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-gitinfo.txt
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-download: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'wamr_ext-populate'"
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps && /usr/bin/cmake -P /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/tmp/wamr_ext-populate-gitclone.cmake
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps && /usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'wamr_ext-populate'"
+	cd /home/eb/fyp/helloworld/build/_deps && /usr/bin/cmake -P /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/tmp/wamr_ext-populate-gitclone.cmake
+	cd /home/eb/fyp/helloworld/build/_deps && /usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-download
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-install: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'wamr_ext-populate'"
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'wamr_ext-populate'"
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-install
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'wamr_ext-populate'"
-	/usr/bin/cmake -Dcfgdir= -P /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/tmp/wamr_ext-populate-mkdirs.cmake
-	/usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'wamr_ext-populate'"
+	/usr/bin/cmake -Dcfgdir= -P /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/tmp/wamr_ext-populate-mkdirs.cmake
+	/usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-mkdir
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-patch: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-patch-info.txt
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-patch: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'wamr_ext-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'wamr_ext-populate'"
 	/usr/bin/cmake -E echo_append
-	/usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-patch
+	/usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-patch
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update:
 .PHONY : wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-test: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'wamr_ext-populate'"
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'wamr_ext-populate'"
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E echo_append
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-build && /usr/bin/cmake -E touch /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-test
 
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update: wamr_ext-populate-prefix/tmp/wamr_ext-populate-gitupdate.cmake
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update-info.txt
 wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-update: wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'wamr_ext-populate'"
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src && /usr/bin/cmake -Dcan_fetch=YES -P /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/tmp/wamr_ext-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'wamr_ext-populate'"
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-src && /usr/bin/cmake -Dcan_fetch=YES -P /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/wamr_ext-populate-prefix/tmp/wamr_ext-populate-gitupdate.cmake
 
 wamr_ext-populate: CMakeFiles/wamr_ext-populate
 wamr_ext-populate: CMakeFiles/wamr_ext-populate-complete
@@ -154,6 +154,6 @@ CMakeFiles/wamr_ext-populate.dir/clean:
 .PHONY : CMakeFiles/wamr_ext-populate.dir/clean
 
 CMakeFiles/wamr_ext-populate.dir/depend:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles/wamr_ext-populate.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles/wamr_ext-populate.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/wamr_ext-populate.dir/depend
 

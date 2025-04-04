@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/wasm_host.dir/depend.make
@@ -69,32 +69,48 @@ include CMakeFiles/wasm_host.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/wasm_host.dir/flags.make
 
-CMakeFiles/wasm_host.dir/host.cpp.o: CMakeFiles/wasm_host.dir/flags.make
-CMakeFiles/wasm_host.dir/host.cpp.o: /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/host.cpp
-CMakeFiles/wasm_host.dir/host.cpp.o: CMakeFiles/wasm_host.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wasm_host.dir/host.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wasm_host.dir/host.cpp.o -MF CMakeFiles/wasm_host.dir/host.cpp.o.d -o CMakeFiles/wasm_host.dir/host.cpp.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/host.cpp
+CMakeFiles/wasm_host.dir/src/host.cpp.o: CMakeFiles/wasm_host.dir/flags.make
+CMakeFiles/wasm_host.dir/src/host.cpp.o: /home/eb/fyp/helloworld/src/host.cpp
+CMakeFiles/wasm_host.dir/src/host.cpp.o: CMakeFiles/wasm_host.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wasm_host.dir/src/host.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wasm_host.dir/src/host.cpp.o -MF CMakeFiles/wasm_host.dir/src/host.cpp.o.d -o CMakeFiles/wasm_host.dir/src/host.cpp.o -c /home/eb/fyp/helloworld/src/host.cpp
 
-CMakeFiles/wasm_host.dir/host.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wasm_host.dir/host.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/host.cpp > CMakeFiles/wasm_host.dir/host.cpp.i
+CMakeFiles/wasm_host.dir/src/host.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wasm_host.dir/src/host.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eb/fyp/helloworld/src/host.cpp > CMakeFiles/wasm_host.dir/src/host.cpp.i
 
-CMakeFiles/wasm_host.dir/host.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wasm_host.dir/host.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/host.cpp -o CMakeFiles/wasm_host.dir/host.cpp.s
+CMakeFiles/wasm_host.dir/src/host.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wasm_host.dir/src/host.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eb/fyp/helloworld/src/host.cpp -o CMakeFiles/wasm_host.dir/src/host.cpp.s
+
+CMakeFiles/wasm_host.dir/src/native_impl.cpp.o: CMakeFiles/wasm_host.dir/flags.make
+CMakeFiles/wasm_host.dir/src/native_impl.cpp.o: /home/eb/fyp/helloworld/src/native_impl.cpp
+CMakeFiles/wasm_host.dir/src/native_impl.cpp.o: CMakeFiles/wasm_host.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/wasm_host.dir/src/native_impl.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/wasm_host.dir/src/native_impl.cpp.o -MF CMakeFiles/wasm_host.dir/src/native_impl.cpp.o.d -o CMakeFiles/wasm_host.dir/src/native_impl.cpp.o -c /home/eb/fyp/helloworld/src/native_impl.cpp
+
+CMakeFiles/wasm_host.dir/src/native_impl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/wasm_host.dir/src/native_impl.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eb/fyp/helloworld/src/native_impl.cpp > CMakeFiles/wasm_host.dir/src/native_impl.cpp.i
+
+CMakeFiles/wasm_host.dir/src/native_impl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/wasm_host.dir/src/native_impl.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eb/fyp/helloworld/src/native_impl.cpp -o CMakeFiles/wasm_host.dir/src/native_impl.cpp.s
 
 # Object files for target wasm_host
 wasm_host_OBJECTS = \
-"CMakeFiles/wasm_host.dir/host.cpp.o"
+"CMakeFiles/wasm_host.dir/src/host.cpp.o" \
+"CMakeFiles/wasm_host.dir/src/native_impl.cpp.o"
 
 # External object files for target wasm_host
 wasm_host_EXTERNAL_OBJECTS =
 
-wasm_host: CMakeFiles/wasm_host.dir/host.cpp.o
+wasm_host: CMakeFiles/wasm_host.dir/src/host.cpp.o
+wasm_host: CMakeFiles/wasm_host.dir/src/native_impl.cpp.o
 wasm_host: CMakeFiles/wasm_host.dir/build.make
 wasm_host: libwamrlib.a
 wasm_host: CMakeFiles/wasm_host.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable wasm_host"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable wasm_host"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wasm_host.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -106,6 +122,6 @@ CMakeFiles/wasm_host.dir/clean:
 .PHONY : CMakeFiles/wasm_host.dir/clean
 
 CMakeFiles/wasm_host.dir/depend:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eb/fyp/grpc/examples/cpp/helloworld_wasm /home/eb/fyp/grpc/examples/cpp/helloworld_wasm /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles/wasm_host.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/eb/fyp/helloworld/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eb/fyp/helloworld /home/eb/fyp/helloworld /home/eb/fyp/helloworld/build /home/eb/fyp/helloworld/build /home/eb/fyp/helloworld/build/CMakeFiles/wasm_host.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/wasm_host.dir/depend
 

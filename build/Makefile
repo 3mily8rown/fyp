@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles /home/eb/fyp/helloworld/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1264,29 +1264,53 @@ _deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wamrlib.dir/build.make CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s
 .PHONY : _deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s
 
-host.o: host.cpp.o
-.PHONY : host.o
+src/host.o: src/host.cpp.o
+.PHONY : src/host.o
 
 # target to build an object file
-host.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/host.cpp.o
-.PHONY : host.cpp.o
+src/host.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/src/host.cpp.o
+.PHONY : src/host.cpp.o
 
-host.i: host.cpp.i
-.PHONY : host.i
+src/host.i: src/host.cpp.i
+.PHONY : src/host.i
 
 # target to preprocess a source file
-host.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/host.cpp.i
-.PHONY : host.cpp.i
+src/host.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/src/host.cpp.i
+.PHONY : src/host.cpp.i
 
-host.s: host.cpp.s
-.PHONY : host.s
+src/host.s: src/host.cpp.s
+.PHONY : src/host.s
 
 # target to generate assembly for a file
-host.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/host.cpp.s
-.PHONY : host.cpp.s
+src/host.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/src/host.cpp.s
+.PHONY : src/host.cpp.s
+
+src/native_impl.o: src/native_impl.cpp.o
+.PHONY : src/native_impl.o
+
+# target to build an object file
+src/native_impl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/src/native_impl.cpp.o
+.PHONY : src/native_impl.cpp.o
+
+src/native_impl.i: src/native_impl.cpp.i
+.PHONY : src/native_impl.i
+
+# target to preprocess a source file
+src/native_impl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/src/native_impl.cpp.i
+.PHONY : src/native_impl.cpp.i
+
+src/native_impl.s: src/native_impl.cpp.s
+.PHONY : src/native_impl.s
+
+# target to generate assembly for a file
+src/native_impl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wasm_host.dir/build.make CMakeFiles/wasm_host.dir/src/native_impl.cpp.s
+.PHONY : src/native_impl.cpp.s
 
 # Help Target
 help:
@@ -1436,9 +1460,12 @@ help:
 	@echo "... _deps/wamr_ext-src/core/shared/utils/runtime_timer.o"
 	@echo "... _deps/wamr_ext-src/core/shared/utils/runtime_timer.i"
 	@echo "... _deps/wamr_ext-src/core/shared/utils/runtime_timer.s"
-	@echo "... host.o"
-	@echo "... host.i"
-	@echo "... host.s"
+	@echo "... src/host.o"
+	@echo "... src/host.i"
+	@echo "... src/host.s"
+	@echo "... src/native_impl.o"
+	@echo "... src/native_impl.i"
+	@echo "... src/native_impl.s"
 .PHONY : help
 
 

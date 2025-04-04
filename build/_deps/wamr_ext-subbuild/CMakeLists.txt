@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(wamr_ext-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/bytecodealliance/wasm-micro-runtime" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "4e50d2191ca8f177ad03a9d80eebc44b59a932db"
-                    SOURCE_DIR          "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src"
-                    BINARY_DIR          "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-build"
+                    SOURCE_DIR          "/home/eb/fyp/helloworld/build/_deps/wamr_ext-src"
+                    BINARY_DIR          "/home/eb/fyp/helloworld/build/_deps/wamr_ext-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

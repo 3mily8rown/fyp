@@ -1,8 +1,8 @@
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o: \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_wasi_types.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/../../../config.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_wasi_types.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/../../../config.h \
   /usr/lib/llvm-18/lib/clang/18/include/stdint.h /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h /usr/include/features-time64.h \
@@ -25,9 +25,9 @@ CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posi
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_wchar_t.h \
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h \
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_offsetof.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_api_extension.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_internal.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_api_extension.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_internal.h \
   /usr/lib/llvm-18/lib/clang/18/include/inttypes.h \
   /usr/include/inttypes.h \
   /usr/lib/llvm-18/lib/clang/18/include/stdbool.h /usr/include/assert.h \

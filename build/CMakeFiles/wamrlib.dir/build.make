@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/wamrlib.dir/depend.make
@@ -72,631 +72,631 @@ include CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o: _deps/wamr_ext-src/core/shared/platform/linux/platform_init.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/linux/platform_init.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_blocking_op.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_clock.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_file.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_malloc.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_memmap.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_sleep.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_socket.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_thread.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o: _deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/posix/posix_time.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o: _deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o: _deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_alloc.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o: _deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_gc.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o: _deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_hmu.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o: _deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/ems/ems_kfc.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o: _deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/mem-alloc/mem_alloc.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o: _deps/wamr_ext-src/core/shared/utils/bh_assert.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_assert.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o: _deps/wamr_ext-src/core/shared/utils/bh_bitmap.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o: _deps/wamr_ext-src/core/shared/utils/bh_common.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_common.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_common.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_common.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_common.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_common.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_common.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o: _deps/wamr_ext-src/core/shared/utils/bh_hashmap.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o: _deps/wamr_ext-src/core/shared/utils/bh_leb128.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_leb128.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o: _deps/wamr_ext-src/core/shared/utils/bh_list.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_list.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_list.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_list.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_list.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_list.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_list.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o: _deps/wamr_ext-src/core/shared/utils/bh_log.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_log.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_log.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_log.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_log.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_log.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_log.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o: _deps/wamr_ext-src/core/shared/utils/bh_queue.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_queue.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o: _deps/wamr_ext-src/core/shared/utils/bh_vector.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/bh_vector.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o: _deps/wamr_ext-src/core/shared/utils/runtime_timer.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/utils/runtime_timer.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o: _deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-builtin/libc_builtin_wrapper.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o: _deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/libc_wasi_wrapper.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o: _deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/blocking_op.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o: _deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o: _deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/random.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o: _deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/str.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_application.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_application.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_blocking_op.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_c_api.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_exec_env.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_loader_common.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_memory.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_memory.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_native.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_native.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o: _deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.o: _deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.o"
-	/usr/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.o"
+	/usr/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.i"
-	/usr/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.i
+	/usr/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.s"
-	/usr/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.s
+	/usr/bin/clang $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/common/arch/invokeNative_em64.s.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o: _deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_interp_classic.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o: _deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_loader.c.s
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o: CMakeFiles/wamrlib.dir/flags.make
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o: _deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o: CMakeFiles/wamrlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o -c /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o -MF CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o.d -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o -c /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c > CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.i
 
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c -o CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.s
 
 # Object files for target wamrlib
 wamrlib_OBJECTS = \
@@ -796,7 +796,7 @@ libwamrlib.a: CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/w
 libwamrlib.a: CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/iwasm/interpreter/wasm_runtime.c.o
 libwamrlib.a: CMakeFiles/wamrlib.dir/build.make
 libwamrlib.a: CMakeFiles/wamrlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking C static library libwamrlib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/eb/fyp/helloworld/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking C static library libwamrlib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/wamrlib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wamrlib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -809,6 +809,6 @@ CMakeFiles/wamrlib.dir/clean:
 .PHONY : CMakeFiles/wamrlib.dir/clean
 
 CMakeFiles/wamrlib.dir/depend:
-	cd /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eb/fyp/grpc/examples/cpp/helloworld_wasm /home/eb/fyp/grpc/examples/cpp/helloworld_wasm /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/CMakeFiles/wamrlib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/eb/fyp/helloworld/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eb/fyp/helloworld /home/eb/fyp/helloworld /home/eb/fyp/helloworld/build /home/eb/fyp/helloworld/build /home/eb/fyp/helloworld/build/CMakeFiles/wamrlib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/wamrlib.dir/depend
 

@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/host.cpp" "CMakeFiles/wasm_host.dir/host.cpp.o" "gcc" "CMakeFiles/wasm_host.dir/host.cpp.o.d"
+  "/home/eb/fyp/helloworld/src/host.cpp" "CMakeFiles/wasm_host.dir/src/host.cpp.o" "gcc" "CMakeFiles/wasm_host.dir/src/host.cpp.o.d"
+  "/home/eb/fyp/helloworld/src/native_impl.cpp" "CMakeFiles/wasm_host.dir/src/native_impl.cpp.o" "gcc" "CMakeFiles/wasm_host.dir/src/native_impl.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

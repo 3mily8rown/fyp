@@ -1,9 +1,9 @@
 _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c.o: \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_log.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_platform.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_internal.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.c \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_log.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_platform.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/platform_internal.h \
   /usr/lib/llvm-18/lib/clang/18/include/inttypes.h \
   /usr/include/inttypes.h /usr/include/features.h \
   /usr/include/features-time64.h \
@@ -190,40 +190,40 @@ _deps/wamr_ext-build/CMakeFiles/vmlib.dir/core/iwasm/common/wasm_shared_memory.c
   /usr/include/x86_64-linux-gnu/bits/resource.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
   /usr/include/setjmp.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/../../../config.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_api_vmcore.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_api_extension.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_wasi_types.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/../../../config.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_api_vmcore.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_api_extension.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/../platform/include/platform_wasi_types.h \
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_ptrdiff_t.h \
   /usr/lib/llvm-18/lib/clang/18/include/__stddef_offsetof.h \
   /usr/lib/llvm-18/lib/clang/18/include/stdatomic.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_list.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/wasm_runtime.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/wasm.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_atomic.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/gnuc.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_runtime_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_exec_env.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_suspend_flags.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/../interpreter/wasm.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_native.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/../include/wasm_export.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/../include/lib_export.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/locking.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/ssp_config.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../aot/aot_runtime.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../common/wasm_runtime_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../interpreter/wasm_runtime.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../compilation/aot.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../compilation/../common/wasm_runtime_common.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../compilation/../interpreter/wasm.h
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_assert.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_hashmap.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_list.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_queue.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_vector.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/runtime_timer.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_shared_memory.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/wasm_runtime.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/wasm.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_atomic.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/gnuc.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/utils/bh_bitmap.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_runtime_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_exec_env.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_suspend_flags.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/../interpreter/wasm.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/wasm_native.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/../include/wasm_export.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../interpreter/../common/../include/lib_export.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/posix.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/locking.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/libraries/libc-wasi/sandboxed-system-primitives/src/ssp_config.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/wasm_runtime_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../aot/aot_runtime.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../common/wasm_runtime_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../interpreter/wasm_runtime.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../compilation/aot.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../compilation/../common/wasm_runtime_common.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/common/../aot/../compilation/../interpreter/wasm.h

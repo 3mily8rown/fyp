@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(simde-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/simd-everywhere/simde" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v0.8.2"
-                    SOURCE_DIR          "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/simde-src"
-                    BINARY_DIR          "/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/simde-build"
+                    SOURCE_DIR          "/home/eb/fyp/helloworld/build/_deps/simde-src"
+                    BINARY_DIR          "/home/eb/fyp/helloworld/build/_deps/simde-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

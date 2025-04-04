@@ -1,1 +1,1 @@
-/usr/bin/clang++  -fPIC CMakeFiles/wasm_host.dir/host.cpp.o -o wasm_host  libwamrlib.a -lpthread -lm -ldl 
+/usr/bin/clang++  -fPIC CMakeFiles/wasm_host.dir/src/host.cpp.o CMakeFiles/wasm_host.dir/src/native_impl.cpp.o -o wasm_host  libwamrlib.a -lpthread -lm -ldl 

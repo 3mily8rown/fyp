@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/wamr_ext-populate.dir/clean
 CMakeFiles/wamr_ext-populate.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wamr_ext-populate.dir/build.make CMakeFiles/wamr_ext-populate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wamr_ext-populate.dir/build.make CMakeFiles/wamr_ext-populate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target wamr_ext-populate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target wamr_ext-populate"
 .PHONY : CMakeFiles/wamr_ext-populate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/wamr_ext-populate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wamr_ext-populate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles 0
 .PHONY : CMakeFiles/wamr_ext-populate.dir/rule
 
 # Convenience name for target.

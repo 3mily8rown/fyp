@@ -1,5 +1,5 @@
 CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c.o: \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.c \
   /usr/include/errno.h /usr/include/features.h \
   /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -12,9 +12,9 @@ CMakeFiles/wamrlib.dir/_deps/wamr_ext-src/core/shared/platform/common/libc-util/
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_wasi_types.h \
-  /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/../../../config.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/common/libc-util/libc_errno.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/platform_wasi_types.h \
+  /home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/shared/platform/linux/../include/../../../config.h \
   /usr/lib/llvm-18/lib/clang/18/include/stdint.h /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \

@@ -10,8 +10,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "CMakeLists.txt"
   "wamr_ext-populate-prefix/tmp/wamr_ext-populate-mkdirs.cmake"
+  "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
+  "/usr/share/cmake-3.28/Modules/CMakeSystem.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.28/Modules/ExternalProject.cmake"
@@ -36,6 +38,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "wamr_ext-populate-prefix/tmp/wamr_ext-populate-mkdirs.cmake"
   "wamr_ext-populate-prefix/tmp/wamr_ext-populate-gitclone.cmake"
   "wamr_ext-populate-prefix/src/wamr_ext-populate-stamp/wamr_ext-populate-gitinfo.txt"

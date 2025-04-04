@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild
+CMAKE_SOURCE_DIR = /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild
+CMAKE_BINARY_DIR = /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/grpc/examples/cpp/helloworld_wasm/build/_deps/wamr_ext-subbuild/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eb/fyp/helloworld/build/_deps/wamr_ext-subbuild/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
