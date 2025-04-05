@@ -7,7 +7,6 @@
 
 set -e  # Exit immediately on any error
 
-CURR_DIR=$PWD
 OUT_DIR=${PWD}/build
 WASM_APPS=${PWD}/wasm
 
@@ -21,7 +20,6 @@ if [ "$BUILD_TYPE" = "full" ]; then
   rm -rf "${OUT_DIR}" cmake-build-debug CMakeCache.txt CMakeFiles
   mkdir -p "${OUT_DIR}"/wasm-apps
 
-  cd "${CURR_DIR}"
   cd "${OUT_DIR}"
 
   cmake \
@@ -43,7 +41,7 @@ echo -e "\n"
 
 if [ "$REBUILD_WASM" = "wasm" ]; then
   echo "#####################build wasm apps"
-  cd ${WASM_APPS}
+  cd "${WASM_APPS}"
 
   for i in *.cpp
   do
@@ -58,7 +56,7 @@ if [ "$REBUILD_WASM" = "wasm" ]; then
           -o "${OUT_DIR}"/wasm-apps/"${OUT_FILE}" \
            "${APP_SRC}"
 
-  if [ -f ${OUT_DIR}/wasm-apps/${OUT_FILE} ]; then
+  if [ -f "${OUT_DIR}"/wasm-apps/"${OUT_FILE}" ]; then
           echo "build ${OUT_FILE} success"
   else
           echo "build ${OUT_FILE} fail"
