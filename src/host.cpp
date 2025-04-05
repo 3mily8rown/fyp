@@ -10,6 +10,13 @@
 
 #include "wasm_export.h"
 
+// int
+// intToStr(int x, char *str, int str_len, int digit);
+// int
+// get_pow(int x, int y);
+extern "C" int32_t calculate_native(wasm_exec_env_t exec_env, int32_t n, int32_t func1, int32_t func2);
+extern "C" int32_t get_pow(wasm_exec_env_t exec_env, int32_t n, int32_t m);
+
 // used to read WASM bytecode at runtime (into byte array)
 std::vector<uint8_t> readFileToBytes(const std::string& path)
 {
@@ -22,7 +29,7 @@ std::vector<uint8_t> readFileToBytes(const std::string& path)
   if (staterr < 0) {
     throw std::runtime_error("Couldn't stat file " + path);
   }
-  size_t fsize = statbuf.st_size;
+  ssize_t fsize = statbuf.st_size;
   posix_fadvise(fd, 0, 0, POSIX_FADV_SEQUENTIAL);
   std::vector<uint8_t> result;
   result.resize(fsize);
@@ -119,7 +126,8 @@ const char* call_func(wasm_module_inst_t inst, wasm_exec_env_t env, const char* 
   return ret_ptr;
 }
 
-int calling(wasm_module_inst_t module_inst,
+// calls a functions that takes in vector of int args and outputs 1 int
+int int_func(wasm_module_inst_t module_inst,
             wasm_exec_env_t exec_env,
             const char* func_name,
             const std::vector<uint32_t>& args,
@@ -142,8 +150,10 @@ int calling(wasm_module_inst_t module_inst,
   }
 
   // return result
-  wasm_val_t results[1] = { { .kind = WASM_I32, .of.i32 = 0 } };
-
+  // wasm_val_t results[1] = { { .kind = WASM_I32, .of.i32 = 0 } };
+  wasm_val_t results[1];
+  results[0].kind = WASM_I32;
+  results[0].of.i32 = 0;
 
   if (!wasm_runtime_call_wasm_a(exec_env, func, 1, results, wasm_args.size(), wasm_args.data())) {
     printf("call wasm function %s failed. %s\n",
@@ -165,17 +175,34 @@ int main() {
 
   static char global_heap_buf[512 * 1024];
   RuntimeInitArgs init_args;
+
+  static NativeSymbol native_symbols[] = {
+    //   {
+    //     "intToStr", // the name of WASM function name
+    //     intToStr,   // the native function pointer
+    //     "(i*~i)i",  // the function prototype signature, avoid to use i32
+    //     NULL        // attachment is NULL
+    // },
+    { "calculate_native", (void*)calculate_native, "(iii)i", nullptr },
+    { "get_pow", (void*)(get_pow), "(ii)i", nullptr }
+  };
+
   memset(&init_args, 0, sizeof(RuntimeInitArgs));
   init_args.mem_alloc_type = Alloc_With_Pool;
   init_args.mem_alloc_option.pool.heap_buf = global_heap_buf;
   init_args.mem_alloc_option.pool.heap_size = sizeof(global_heap_buf);
+
+  // Native symbols need below registration phase
+  init_args.n_native_symbols = sizeof(native_symbols) / sizeof(NativeSymbol);
+  init_args.native_module_name = "env";
+  init_args.native_symbols = native_symbols;
 
   if (!wasm_runtime_full_init(&init_args)) {
     printf("Init runtime environment failed.\n");
     return -1;
   }
   wasm_runtime_set_log_level(WASM_LOG_LEVEL_VERBOSE);
-  std::string wasmPath = "/home/eb/fyp/helloworld/test_wasm_app.wasm";
+  std::string wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/wasm_app.wasm";
   // read wasm file
   auto buffer = readFileToBytes(wasmPath);
 
@@ -204,26 +231,47 @@ int main() {
     return 1;
   }
 
+  //Calling WASM functions:
+
   int32_t result;
-  if (calling(module_inst, exec_env, "mul5", {}, result) == 0) {
+
+  // expecting 10
+  if (int_func(module_inst, exec_env, "mul5", {2}, result) == 0) {
     printf("Result from mul5(): %d\n", result);
   } else
   {
     return 1;
   }
 
-  if (calling(module_inst, exec_env, "mul7", {10}, result) == 0) {
+  // expecting 70
+  if (int_func(module_inst, exec_env, "mul7", {10}, result) == 0) {
     printf("Result from mul7(10): %d\n", result);
   } else
   {
     return 1;
   }
 
-  if (calling(module_inst, exec_env, "mul", {8,11}, result) == 0) {
+  // expecting 88
+  if (int_func(module_inst, exec_env, "mul", {8,11}, result) == 0) {
     printf("Result from mul(8,11): %d\n", result);
   } else
   {
     return 1;
   }
 
+  // expecting 16
+  if (int_func(module_inst, exec_env, "power", {2,4}, result) == 0) {
+    printf("Result from power(2,4): %d\n", result);
+  } else
+  {
+    return 1;
+  }
+
+  // expecting 96 (8*7 + 8*5)
+  if (int_func(module_inst, exec_env, "calculate", {8}, result) == 0) {
+    printf("Result from calculate(8): %d\n", result);
+  } else
+  {
+    return 1;
+  }
 }

@@ -91,11 +91,11 @@ mul(int32_t n, int32_t m)
     return n;
 }
 
-int32_t
-calculate(int32_t n)
-{
-    printf("calling into WASM function: %s\n", __FUNCTION__);
-    int32_t (*f1)(int32_t) = &mul5;
-    int32_t (*f2)(int32_t) = &mul7;
-    return calculate_native(n, (uint32_t)f1, (uint32_t)f2);
-}
+//int32_t
+//calculate(int32_t n)
+//{
+//    printf("calling into WASM function: %s\n", __FUNCTION__);
+//    int32_t (*f1)(int32_t) = &mul5;
+//    int32_t (*f2)(int32_t) = &mul7;
+//    return calculate_native(n, (uint32_t)f1, (uint32_t)f2);
+//}
