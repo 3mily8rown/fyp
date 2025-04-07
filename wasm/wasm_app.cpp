@@ -14,7 +14,7 @@ extern "C" {
     int32_t calculate_native(int32_t n, int32_t func1, int32_t func2);
 }
 
-// wasm doesn't support cout
+// wasm doesn't support cout?
 extern "C" int32_t mul7(int32_t n) {
     printf("calling into WASM function: %s,", __FUNCTION__);
     n = n * 7;

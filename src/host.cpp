@@ -8,8 +8,7 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-// #include <wasm_export.h>
-#include </home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/include/wasm_export.h>
+#include <wasm_export.h>
 
 // int
 // intToStr(int x, char *str, int str_len, int digit);
@@ -128,7 +127,7 @@ const char* call_func(wasm_module_inst_t inst, wasm_exec_env_t env, const char* 
 }
 
 // calls a functions that takes in vector of int args and outputs 1 int
-int int_func(wasm_module_inst_t module_inst,
+int call_int_func(wasm_module_inst_t module_inst,
             wasm_exec_env_t exec_env,
             const char* func_name,
             const std::vector<uint32_t>& args,
@@ -237,7 +236,7 @@ int main() {
   int32_t result;
 
   // expecting 10
-  if (int_func(module_inst, exec_env, "mul5", {2}, result) == 0) {
+  if (call_int_func(module_inst, exec_env, "mul5", {2}, result) == 0) {
     printf("Result from mul5(): %d\n", result);
   } else
   {
@@ -245,7 +244,7 @@ int main() {
   }
 
   // expecting 70
-  if (int_func(module_inst, exec_env, "mul7", {10}, result) == 0) {
+  if (call_int_func(module_inst, exec_env, "mul7", {10}, result) == 0) {
     printf("Result from mul7(10): %d\n", result);
   } else
   {
@@ -253,7 +252,7 @@ int main() {
   }
 
   // expecting 88
-  if (int_func(module_inst, exec_env, "mul", {8,11}, result) == 0) {
+  if (call_int_func(module_inst, exec_env, "mul", {8,11}, result) == 0) {
     printf("Result from mul(8,11): %d\n", result);
   } else
   {
@@ -261,7 +260,7 @@ int main() {
   }
 
   // expecting 16
-  if (int_func(module_inst, exec_env, "power", {2,4}, result) == 0) {
+  if (call_int_func(module_inst, exec_env, "power", {2,4}, result) == 0) {
     printf("Result from power(2,4): %d\n", result);
   } else
   {
@@ -269,7 +268,7 @@ int main() {
   }
 
   // expecting 96 (8*7 + 8*5)
-  if (int_func(module_inst, exec_env, "calculate", {8}, result) == 0) {
+  if (call_int_func(module_inst, exec_env, "calculate", {8}, result) == 0) {
     printf("Result from calculate(8): %d\n", result);
   } else
   {

@@ -2,8 +2,7 @@
 #include <cstdint>
 #include <array>
 #include <cmath>
-// #include <wasm_export.h>
-#include <../build/_deps/wamr_ext-src/core/iwasm/include/wasm_export.h>
+#include <wasm_export.h>
 
 // to prevent name mangling
 extern "C" {
