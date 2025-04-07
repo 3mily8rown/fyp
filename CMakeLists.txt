@@ -32,6 +32,8 @@ set(SOURCES
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
+add_subdirectory(wasm)
+
 # ------------------------------
 # Add WAMR support for wasm_host
 # ------------------------------
@@ -77,8 +79,3 @@ target_link_libraries(wasm_host
         m
         dl
 )
-
-
-
-
-

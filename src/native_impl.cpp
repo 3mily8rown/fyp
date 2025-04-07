@@ -2,13 +2,14 @@
 #include <cstdint>
 #include <array>
 #include <cmath>
-#include <wasm_export.h>
+// #include <wasm_export.h>
+#include <../build/_deps/wamr_ext-src/core/iwasm/include/wasm_export.h>
 
 // to prevent name mangling
 extern "C" {
     // calculate_native works on the assumption both functions take in exactly one int32_t and return such also
     // (must take in 1 arg so the result is put into argv array)
-    // cannot call directly like host.cpp because just have func table indexes
+    // cannot call directly like host.cpp because just have func table indexes not name of funcs
     int32_t calculate_native(wasm_exec_env_t exec_env, int32_t n, int32_t func1, int32_t func2)
     {
         std::cout << "Calling into native function: " << __FUNCTION__

@@ -8,7 +8,8 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-#include "wasm_export.h"
+// #include <wasm_export.h>
+#include </home/eb/fyp/helloworld/build/_deps/wamr_ext-src/core/iwasm/include/wasm_export.h>
 
 // int
 // intToStr(int x, char *str, int str_len, int digit);
