@@ -42,4 +42,56 @@ extern "C" {
             std::cout << "Calling into native function: " << __FUNCTION__ << std::endl;
             return static_cast<int32_t>(pow(x, y));
         }
+
+
+    // The first parameter is not exec_env because it is invoked by native functions
+    void
+    reverse(char *str, int len)
+    {
+        int i = 0, j = len - 1, temp;
+        while (i < j) {
+            temp = str[i];
+            str[i] = str[j];
+            str[j] = temp;
+            i++;
+            j--;
+        }
+    }
+
+    // Converts a given integer x to string str[].
+    // digit is the number of digits required in the output.
+    // If digit is more than the number of digits in x,
+    // then 0s are added at the beginning.
+    int
+    intToStr(wasm_exec_env_t exec_env, int x, char *str, int str_len, int digit)
+    {
+        int i = 0;
+
+        printf("calling into native function: %s\n", __FUNCTION__);
+
+        while (x) {
+            // native is responsible for checking the str_len overflow
+            if (i >= str_len) {
+                return -1;
+            }
+            str[i++] = (x % 10) + '0';
+            x = x / 10;
+        }
+
+        // If number of digits required is more, then
+        // add 0s at the beginning
+        while (i < digit) {
+            if (i >= str_len) {
+                return -1;
+            }
+            str[i++] = '0';
+        }
+
+        reverse(str, i);
+
+        if (i >= str_len)
+            return -1;
+        str[i] = '\0';
+        return i;
+    }
 }

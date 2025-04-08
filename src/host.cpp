@@ -10,10 +10,7 @@
 
 #include <wasm_export.h>
 
-// int
-// intToStr(int x, char *str, int str_len, int digit);
-// int
-// get_pow(int x, int y);
+extern "C" int intToStr(int x, char *str, int str_len, int digit);
 extern "C" int32_t calculate_native(wasm_exec_env_t exec_env, int32_t n, int32_t func1, int32_t func2);
 extern "C" int32_t get_pow(wasm_exec_env_t exec_env, int32_t n, int32_t m);
 
@@ -47,48 +44,38 @@ std::vector<uint8_t> readFileToBytes(const std::string& path)
   return result;
 }
 
-// Utility to load a Wasm module and initialises wamr runtime and creates execution environment
-wasm_module_t load_module(const char* path, wasm_module_inst_t &out_inst, wasm_exec_env_t &out_env) {
-    uint8_t *wasm_file_buf = nullptr;
-    uint32_t wasm_file_size = 0;
+// read wasm file, load module and create execution environment
+wasm_module_t load_module_minimal(
+  std::vector<uint8_t>& buffer,
+  wasm_module_inst_t& out_inst,
+  wasm_exec_env_t& out_env,
+  uint32_t stack_size,
+  uint32_t heap_size,
+  char* error_buf,
+  size_t error_buf_size) {
 
-    FILE *fp = fopen(path, "rb");
-    if (!fp) {
-        printf("Failed to open %s\n", path);
-        exit(1);
-    }
-    fseek(fp, 0, SEEK_END);
-    wasm_file_size = ftell(fp);
-    fseek(fp, 0, SEEK_SET);
-    wasm_file_buf = new uint8_t[wasm_file_size];
-    fread(wasm_file_buf, 1, wasm_file_size, fp);
-    fclose(fp);
+  wasm_module_t module = wasm_runtime_load(buffer.data(), buffer.size(), error_buf, error_buf_size);
+  if (!module) {
+    printf("Load wasm module failed. error: %s\n", error_buf);
+    return nullptr;
+  }
 
-    RuntimeInitArgs init_args;
-    memset(&init_args, 0, sizeof(init_args));
-    static char global_heap_buf[512 * 1024];
-    init_args.mem_alloc_type = Alloc_With_Pool;
-    init_args.mem_alloc_option.pool.heap_buf = global_heap_buf;
-    init_args.mem_alloc_option.pool.heap_size = sizeof(global_heap_buf);
+  out_inst = wasm_runtime_instantiate(module, stack_size, heap_size, error_buf, error_buf_size);
+  if (!out_inst) {
+    printf("Instantiate wasm module failed. error: %s\n", error_buf);
+    wasm_runtime_unload(module);
+    return nullptr;
+  }
 
-    wasm_runtime_full_init(&init_args);
+  out_env = wasm_runtime_create_exec_env(out_inst, stack_size);
+  if (!out_env) {
+    printf("Create wasm execution environment failed.\n");
+    wasm_runtime_deinstantiate(out_inst);
+    wasm_runtime_unload(module);
+    return nullptr;
+  }
 
-    char error_buf[128];
-    wasm_module_t module = wasm_runtime_load(wasm_file_buf, wasm_file_size, error_buf, sizeof(error_buf));
-    delete[] wasm_file_buf;
-    if (!module) {
-        printf("Error loading module: %s\n", error_buf);
-        exit(1);
-    }
-
-    out_inst = wasm_runtime_instantiate(module, 64 * 1024, 64 * 1024, error_buf, sizeof(error_buf));
-    if (!out_inst) {
-        printf("Error instantiating module: %s\n", error_buf);
-        exit(1);
-    }
-
-    out_env = wasm_runtime_create_exec_env(out_inst, 64 * 1024);
-    return module;
+  return module;
 }
 
 // Call functions from WASM modules
@@ -126,7 +113,7 @@ const char* call_func(wasm_module_inst_t inst, wasm_exec_env_t env, const char* 
   return ret_ptr;
 }
 
-// calls a functions that takes in vector of int args and outputs 1 int
+// call a function that takes in vector of int args and outputs 1 int
 int call_int_func(wasm_module_inst_t module_inst,
             wasm_exec_env_t exec_env,
             const char* func_name,
@@ -177,12 +164,7 @@ int main() {
   RuntimeInitArgs init_args;
 
   static NativeSymbol native_symbols[] = {
-    //   {
-    //     "intToStr", // the name of WASM function name
-    //     intToStr,   // the native function pointer
-    //     "(i*~i)i",  // the function prototype signature, avoid to use i32
-    //     NULL        // attachment is NULL
-    // },
+    { "intToStr", (void*)intToStr, "(i*~i)i", nullptr},
     { "calculate_native", (void*)calculate_native, "(iii)i", nullptr },
     { "get_pow", (void*)(get_pow), "(ii)i", nullptr }
   };
@@ -201,38 +183,21 @@ int main() {
     printf("Init runtime environment failed.\n");
     return -1;
   }
+
   wasm_runtime_set_log_level(WASM_LOG_LEVEL_VERBOSE);
+  // TODO avoid hardcoding
   std::string wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/wasm_app.wasm";
   // read wasm file
   auto buffer = readFileToBytes(wasmPath);
 
-  // Creating and Initialising WAMR runtime
-  // load wamr runtime
-  module = wasm_runtime_load(buffer.data(), buffer.size(), error_buf,
-                             sizeof(error_buf));
+  // load module and create execution environment
+  module = load_module_minimal(buffer, module_inst, exec_env, stack_size, heap_size, error_buf, sizeof(error_buf));
   if (!module) {
-    printf("Load wasm module failed. error: %s\n", error_buf);
     return 1;
   }
 
-  // instantiate wamr
-  module_inst = wasm_runtime_instantiate(module, stack_size, heap_size,
-                                         error_buf, sizeof(error_buf));
-
-  if (!module_inst) {
-    printf("Instantiate wasm module failed. error: %s\n", error_buf);
-    return 1;
-  }
-
-  // create wamr exec env
-  exec_env = wasm_runtime_create_exec_env(module_inst, stack_size);
-  if (!exec_env) {
-    printf("Create wasm execution environment failed.\n");
-    return 1;
-  }
 
   //Calling WASM functions:
-
   int32_t result;
 
   // expecting 10
@@ -267,11 +232,109 @@ int main() {
     return 1;
   }
 
-  // expecting 96 (8*7 + 8*5)
+  // expecting 96
   if (call_int_func(module_inst, exec_env, "calculate", {8}, result) == 0) {
     printf("Result from calculate(8): %d\n", result);
   } else
   {
     return 1;
+  }
+
+  wasm_function_inst_t func = nullptr;
+  wasm_function_inst_t func2 = nullptr;
+  char *native_buffer = NULL;
+  uint64_t wasm_buffer = 0;
+
+  if (!(func = wasm_runtime_lookup_function(module_inst, "generate_float"))) {
+    printf("The generate_float wasm function is not found.\n");
+    return 1;
+  }
+
+  wasm_val_t results[1] = { { .kind = WASM_F32, .of.f32 = 0 } };
+  wasm_val_t arguments[3] = {
+      { .kind = WASM_I32, .of.i32 = 10 },
+      { .kind = WASM_F64, .of.f64 = 0.000101 },
+      { .kind = WASM_F32, .of.f32 = 300.002 },
+  };
+
+  // pass 4 elements for function arguments
+  if (!wasm_runtime_call_wasm_a(exec_env, func, 1, results, 3, arguments)) {
+      printf("call wasm function generate_float failed. %s\n",
+            wasm_runtime_get_exception(module_inst));
+      return 1;
+  }
+
+  float ret_val;
+  ret_val = results[0].of.f32;
+  printf("Native finished calling wasm function generate_float(), returned a "
+        "float value: %ff\n",
+        ret_val);
+
+  uint32_t argv2[4];
+  // makes the buffers refer to the same memory
+  wasm_buffer = wasm_runtime_module_malloc(module_inst, 100, (void **)&native_buffer);
+
+  memcpy(argv2, &ret_val, sizeof(float)); // the first argument
+  argv2[1] = wasm_buffer; // the second argument is the wasm buffer address
+  argv2[2] = 100;         //  the third argument is the wasm buffer size
+  argv2[3] = 3; wasm_function_inst_t func = nullptr;
+  wasm_function_inst_t func2 = nullptr;
+  char *native_buffer = NULL;
+  uint64_t wasm_buffer = 0;
+  
+  if (!(func = wasm_runtime_lookup_function(module_inst, "generate_float"))) {
+    printf("The generate_float wasm function is not found.\n");
+    return 1;
+  }
+
+  wasm_val_t results[1] = { { .kind = WASM_F32, .of.f32 = 0 } };
+  wasm_val_t arguments[3] = {
+      { .kind = WASM_I32, .of.i32 = 10 },
+      { .kind = WASM_F64, .of.f64 = 0.000101 },
+      { .kind = WASM_F32, .of.f32 = 300.002 },
+  };
+
+  // pass 4 elements for function arguments
+  if (!wasm_runtime_call_wasm_a(exec_env, func, 1, results, 3, arguments)) {
+      printf("call wasm function generate_float failed. %s\n",
+            wasm_runtime_get_exception(module_inst));
+      return 1;
+  }
+
+  float ret_val;
+  ret_val = results[0].of.f32;
+  printf("Native finished calling wasm function generate_float(), returned a "
+        "float value: %ff\n",
+        ret_val);
+
+  // Next we will pass a buffer to the WASM function
+  uint32_t argv2[4];
+
+  // must allocate buffer from wasm instance memory space (never use pointer
+  // from host runtime)
+  wasm_buffer =
+      wasm_runtime_module_malloc(module_inst, 100, (void **)&native_buffer);
+
+  memcpy(argv2, &ret_val, sizeof(float)); // the first argument
+  argv2[1] = wasm_buffer; // the second argument is the wasm buffer address
+  argv2[2] = 100;         //  the third argument is the wasm buffer size
+  argv2[3] = 3; //  the last argument is the digits after decimal point for converting float to string
+
+  if (!(func2 =
+            wasm_runtime_lookup_function(module_inst, "float_to_string"))) {
+      printf(
+          "The wasm function float_to_string wasm function is not found.\n");
+      return 1;
+  }
+
+  if (wasm_runtime_call_wasm(exec_env, func2, 4, argv2)) {
+      printf("Native finished calling wasm function: float_to_string, "
+            "returned a formatted string: %s\n",
+            native_buffer);
+  }
+  else {
+      printf("call wasm function float_to_string failed. error: %s\n",
+            wasm_runtime_get_exception(module_inst));
+      return 1;
   }
 }
