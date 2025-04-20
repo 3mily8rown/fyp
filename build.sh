@@ -14,30 +14,32 @@ WASM_APPS=${PWD}/wasm
 BUILD_TYPE=${1:-full}
 REBUILD_WASM=${2:-wasm}
 
-echo "#####################build basic project"
+if [ "$BUILD_TYPE" != "skip" ]; then
+  echo "#####################build basic project"
 
-if [ "$BUILD_TYPE" = "full" ]; then
-  rm -rf "${OUT_DIR}" cmake-build-debug CMakeCache.txt CMakeFiles
-  mkdir -p "${OUT_DIR}"/wasm-apps
+  if [ "$BUILD_TYPE" = "full" ]; then
+    rm -rf "${OUT_DIR}" cmake-build-debug CMakeCache.txt CMakeFiles
+    mkdir -p "${OUT_DIR}"/wasm-apps
 
-  cd "${OUT_DIR}"
+    cd "${OUT_DIR}"
 
-  cmake \
-    -DCMAKE_C_COMPILER=/usr/bin/clang \
-    -DCMAKE_CXX_COMPILER=/usr/bin/clang++ ..
+    cmake \
+      -DCMAKE_C_COMPILER=/usr/bin/clang \
+      -DCMAKE_CXX_COMPILER=/usr/bin/clang++ ..
 
-else
-  cd "${OUT_DIR}"
+  else
+    cd "${OUT_DIR}"
+  fi
+
+  make -j "$(nproc)"
+
+  if [ $? != 0 ];then
+      echo "BUILD_FAIL basic exit as $?\n"
+      exit 2
+  fi
+
+  echo -e "\n"
 fi
-
-make -j "$(nproc)"
-
-if [ $? != 0 ];then
-    echo "BUILD_FAIL basic exit as $?\n"
-    exit 2
-fi
-
-echo -e "\n"
 
 if [ "$REBUILD_WASM" = "wasm" ]; then
   echo "#####################build wasm apps"
@@ -51,6 +53,13 @@ if [ "$REBUILD_WASM" = "wasm" ]; then
   # use WAMR SDK to build out the .wasm binary
   # could use -Wl,--allow-undefined \ instead of a file listing functions
   $CXX \
+          -I"${WASM_APPS}/../proto_messages/generated" \
+          -I"${WASM_APPS}/../build/_deps/protobuf-src/src" \
+          -I"${WASM_APPS}/../build/_deps/abseil-src" \
+          -L"${WASM_APPS}/../protobuf_wasm/wasm_libraries/protobuf-build-lite/build" \
+          -lprotobuf-lite \
+          -L"${WASM_APPS}/../protobuf_wasm/wasm_libraries/abseil-minimal/build" \
+          -labsl_minimal \
           -Wl,--export-all \
           -Wl,--allow-undefined-file="${WASM_APPS}"/native_impls.txt \
           -o "${OUT_DIR}"/wasm-apps/"${OUT_FILE}" \
