@@ -9,6 +9,7 @@ set(SOURCES
     src/host.cpp
     src/native_impl.cpp
     src/host_utils.cpp
+    src/host_proto.cpp
     proto_messages/generated_full/message.pb.cc
 )
 
@@ -64,10 +65,10 @@ target_include_directories(wamrlib PUBLIC
 add_subdirectory(third_party/abseil-cpp)
 
 target_include_directories(wasm_host PRIVATE
+    proto_messages/generated_full
     include
     ${wamr_ext_SOURCE_DIR}/core/iwasm/include
     third_party/protobuf/src
-    proto_messages/generated_full
 )
 
 # Link the prebuilt libraries

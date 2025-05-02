@@ -34,6 +34,7 @@ PROTOC_BIN=$(pwd)/protoc
 cd "$ROOT_DIR"
 
 # --- Generate Protobuf files ---
+
 PROTO_DIR=proto_messages
 PROTO_FILE=$PROTO_DIR/message.proto
 
@@ -47,6 +48,9 @@ $PROTOC_BIN \
     --cpp_out="$OUT_CPP" \
     "$PROTO_FILE"
 
+
+# --- Generate Nanopb files ---
+
 # Set up venv if needed
 VENV_DIR="$ROOT_DIR/.venv"
 if [ ! -d "$VENV_DIR" ]; then
@@ -55,8 +59,6 @@ if [ ! -d "$VENV_DIR" ]; then
   "$VENV_DIR/bin/pip" install --upgrade pip
   "$VENV_DIR/bin/pip" install protobuf grpcio-tools
 fi
-
-# --- Generate Nanopb files ---
 
 # Run protoc with plugin using venv Python
 export PATH="$VENV_DIR/bin:$PATH"

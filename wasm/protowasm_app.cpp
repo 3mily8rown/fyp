@@ -2,17 +2,12 @@
 #include <cstdint>
 
 #include "pb_encode.h"
+#include "pb_decode.h"
 #include "message.pb.h"
 
 extern "C" void pass_to_native(uint32_t offset, uint32_t length);
 
 extern "C" void* malloc(size_t size);
-
-bool encode_string(pb_ostream_t *stream, const pb_field_t *field, void *const *arg) {
-    const char *str = (const char *)(*arg);
-    return pb_encode_tag_for_field(stream, field) &&
-           pb_encode_string(stream, (const pb_byte_t *)str, strlen(str));
-}
 struct MessageBuffer {
     uint8_t* ptr;
     uint32_t size;
@@ -37,7 +32,7 @@ MessageBuffer message_to_buffer(const MyMessage msg) {
 }
 
 extern "C" void send_message() {
-        MyMessage msg = MyMessage_init_default;
+    MyMessage msg = MyMessage_init_default;
     msg.id = 42;
     strcpy(msg.name, "hello from wasm");
 
@@ -46,4 +41,18 @@ extern "C" void send_message() {
     if (buf.ptr && buf.size > 0) {
         pass_to_native((uint32_t)buf.ptr, buf.size);
     }
+}
+
+extern "C" void receive_message(uint32_t offset, uint32_t length) {
+    // Turn linear memory into nanopb stream
+    pb_istream_t stream = pb_istream_from_buffer((pb_byte_t*)(uintptr_t)offset, length);
+
+    // Decode into nanopb struct:
+    MyMessage msg = MyMessage_init_zero;
+    if (!pb_decode(&stream, MyMessage_fields, &msg)) {
+        printf("Wasm decode failed: %s\n", PB_GET_ERROR(&stream));
+        return;
+    }
+    
+    printf("Wasm recv: \"%s\"\n", msg.name);
 }
