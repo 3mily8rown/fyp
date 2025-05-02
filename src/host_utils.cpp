@@ -60,7 +60,14 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
     }
 
     if (wasm_runtime_call_wasm(exec_env, func_format, 4, argv2)) {
-        printf("Native finished calling float_to_string, returned: %s\n", native_buffer);
+        // printf("Native finished calling float_to_string, returned: %s\n", native_buffer);
+        // replaced ^ with below incase malformed string
+        printf("Raw bytes from WASM buffer:\n");
+        for (int i = 0; i < 100; i++) {
+            if (native_buffer[i] == 0) break;
+            putchar(native_buffer[i]);
+        }
+        putchar('\n');
     } else {
         printf("call wasm function float_to_string failed. %s\n",
                wasm_runtime_get_exception(module_inst));

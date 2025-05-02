@@ -1,6 +1,5 @@
+// message.proto
 syntax = "proto3";
-
-package app.messages;
 
 message MyMessage {
   int32 id = 1;

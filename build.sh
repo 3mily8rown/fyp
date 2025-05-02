@@ -7,8 +7,11 @@
 
 set -e  # Exit immediately on any error
 
-OUT_DIR=${PWD}/build
-WASM_APPS=${PWD}/wasm
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+OUT_DIR="${SCRIPT_DIR}/build"
+WASM_APPS="${SCRIPT_DIR}/wasm"
+PROTO_MESSAGES="${SCRIPT_DIR}/proto_messages"
+NANOPB="${SCRIPT_DIR}/third_party/nanopb"
 
 # Defaults to running cmake and crosscompiling the wasm files
 BUILD_TYPE=${1:-full}
@@ -18,6 +21,10 @@ if [ "$BUILD_TYPE" != "skip" ]; then
   echo "#####################build basic project"
 
   if [ "$BUILD_TYPE" = "full" ]; then
+    echo "##################### Running setup_proto.sh"
+    "${SCRIPT_DIR}/scripts/setup_proto.sh"
+
+    echo "##################### Reconfiguring CMake"
     rm -rf "${OUT_DIR}" cmake-build-debug CMakeCache.txt CMakeFiles
     mkdir -p "${OUT_DIR}"/wasm-apps
 
@@ -38,8 +45,9 @@ if [ "$BUILD_TYPE" != "skip" ]; then
       exit 2
   fi
 
-  echo -e "\n"
+  echo "#####################build basic project done"
 fi
+
 
 if [ "$REBUILD_WASM" = "wasm" ]; then
   echo "#####################build wasm apps"
@@ -50,20 +58,17 @@ if [ "$REBUILD_WASM" = "wasm" ]; then
   APP_SRC="$i"
   OUT_FILE=${i%.*}.wasm
 
-  # use WAMR SDK to build out the .wasm binary
   # could use -Wl,--allow-undefined \ instead of a file listing functions
   $CXX \
-          -I"${WASM_APPS}/../proto_messages/generated" \
-          -I"${WASM_APPS}/../build/_deps/protobuf-src/src" \
-          -I"${WASM_APPS}/../build/_deps/abseil-src" \
-          -L"${WASM_APPS}/../protobuf_wasm/wasm_libraries/protobuf-build-lite/build" \
-          -lprotobuf-lite \
-          -L"${WASM_APPS}/../protobuf_wasm/wasm_libraries/abseil-minimal/build" \
-          -labsl_minimal \
+          --target=wasm32-wasi \
+          -I"${WASM_APPS}/../proto_messages/generated_nano" \
+          -I"${WASM_APPS}/../third_party/nanopb" \
+          -L"${WASM_APPS}/../wasm_libraries/nanopb/build" \
+          -lnanopb \
           -Wl,--export-all \
           -Wl,--allow-undefined-file="${WASM_APPS}"/native_impls.txt \
           -o "${OUT_DIR}"/wasm-apps/"${OUT_FILE}" \
-           "${APP_SRC}"
+           "${APP_SRC}" "${WASM_APPS}/../proto_messages/generated_nano/message.pb.c"
 
   if [ -f "${OUT_DIR}"/wasm-apps/"${OUT_FILE}" ]; then
           echo "build ${OUT_FILE} success"

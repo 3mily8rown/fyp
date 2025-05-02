@@ -1,23 +1,49 @@
-#include <iostream>
+#include <stdio.h>
 #include <cstdint>
 
+#include "pb_encode.h"
 #include "message.pb.h"
 
 extern "C" void pass_to_native(uint32_t offset, uint32_t length);
 
 extern "C" void* malloc(size_t size);
 
+bool encode_string(pb_ostream_t *stream, const pb_field_t *field, void *const *arg) {
+    const char *str = (const char *)(*arg);
+    return pb_encode_tag_for_field(stream, field) &&
+           pb_encode_string(stream, (const pb_byte_t *)str, strlen(str));
+}
+struct MessageBuffer {
+    uint8_t* ptr;
+    uint32_t size;
+};
+
+MessageBuffer message_to_buffer(const MyMessage msg) {
+    // Allocate memory inside the WASM module's heap
+    uint32_t size = 128;
+    uint8_t* buffer_ptr = (uint8_t*)malloc(size);
+    if (!buffer_ptr) return {nullptr, 0};
+
+    // Create a Nanopb stream pointing to this WASM memory
+    pb_ostream_t stream = pb_ostream_from_buffer(buffer_ptr, size);
+
+    // Encode into the WASM buffer
+    if (!pb_encode(&stream, MyMessage_fields, &msg)) {
+        printf("Encoding failed: %s\n", PB_GET_ERROR(&stream));
+        return {nullptr, 0}; 
+    }
+
+    return {buffer_ptr, static_cast<uint32_t>(stream.bytes_written)};
+}
+
 extern "C" void send_message() {
-    app::messages::MyMessage msg;
-    msg.set_id(42);
-    msg.set_name("hello from wasm");
+        MyMessage msg = MyMessage_init_default;
+    msg.id = 42;
+    strcpy(msg.name, "hello from wasm");
 
-    std::string serialized;
-    msg.SerializeToString(&serialized);
-
-    void* buffer_ptr = malloc(serialized.size());
-    uint32_t buffer_offset = reinterpret_cast<uint32_t>(buffer_ptr);
-
-    memcpy(buffer_ptr, serialized.data(), serialized.size());
-    pass_to_native(buffer_offset, serialized.size());
+    // nanopb doesnt have .SerializeToString()
+    MessageBuffer buf = message_to_buffer(msg);
+    if (buf.ptr && buf.size > 0) {
+        pass_to_native((uint32_t)buf.ptr, buf.size);
+    }
 }

@@ -108,7 +108,8 @@ extern "C" {
     
         std::string data((char*)memory, length);
     
-        app::messages::MyMessage msg;
+        MyMessage msg;
+        // MyMessage msg;
         if (!msg.ParseFromString(data)) {
             printf("Failed to parse protobuf\n");
             return;

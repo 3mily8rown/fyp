@@ -81,9 +81,11 @@ wasm_module_t load_module_minimal(
 }
 
 int main() {
-  wasm_module_t module = nullptr;
-  wasm_module_inst_t module_inst = nullptr;
-  wasm_exec_env_t exec_env = nullptr;
+  wasm_runtime_set_log_level(WASM_LOG_LEVEL_DEBUG);
+
+  wasm_module_t module = nullptr, proto_module = nullptr;
+  wasm_module_inst_t module_inst = nullptr, proto_module_inst = nullptr;
+  wasm_exec_env_t exec_env = nullptr, proto_exec_env = nullptr;
   char error_buf[128];
   uint32_t buf_size, stack_size = 8092, heap_size = 8092;
 
@@ -94,7 +96,7 @@ int main() {
     { "intToStr", (void*)intToStr, "(i*~i)i", nullptr},
     { "calculate_native", (void*)calculate_native, "(iii)i", nullptr },
     { "get_pow", (void*)(get_pow), "(ii)i", nullptr },
-    { "pass_to_native", (void*)pass_to_native_wrapper, "(ii)v", nullptr}
+    { "pass_to_native", (void*)pass_to_native_wrapper, "(ii)", nullptr}
   };
 
   memset(&init_args, 0, sizeof(RuntimeInitArgs));
@@ -113,14 +115,25 @@ int main() {
   }
 
   wasm_runtime_set_log_level(WASM_LOG_LEVEL_VERBOSE);
+
   // TODO avoid hardcoding
+  // Load first wasm module
   std::string wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/wasm_app.wasm";
-  // read wasm file
   auto buffer = readFileToBytes(wasmPath);
 
   // load module and create execution environment
   module = load_module_minimal(buffer, module_inst, exec_env, stack_size, heap_size, error_buf, sizeof(error_buf));
   if (!module) {
+    return 1;
+  }
+
+  // Load second wasm module
+  wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/protowasm_app.wasm";
+  auto proto_buffer = readFileToBytes(wasmPath);
+
+  // load module and create execution environment
+  proto_module = load_module_minimal(proto_buffer, proto_module_inst, proto_exec_env, stack_size, heap_size, error_buf, sizeof(error_buf));
+  if (!proto_module) {
     return 1;
   }
 
@@ -168,11 +181,21 @@ int main() {
     return 1;
   }
 
-  if (call_generate_and_format_float(exec_env, module_inst) != 0) {
+  if (call_generate_and_format_float(exec_env, module_inst) == 0) {
+    printf("Generated float\n");
+  } else {
     printf("Error occurred during WASM call sequence.\n");
     return 1;
   }
 
-  wasm_function_inst_t func = wasm_runtime_lookup_function(module_inst, "send_message");
-  wasm_runtime_call_wasm(exec_env, func, 0, nullptr);
+  printf("Finding send_message\n");
+  wasm_function_inst_t func = wasm_runtime_lookup_function(proto_module_inst, "send_message");
+  printf("Calling send_message\n");
+  if (!func) {
+    printf("Function not found in wasm module :(");
+  }
+  if (!wasm_runtime_call_wasm(proto_exec_env, func, 0, nullptr)) {
+    const char* ex = wasm_runtime_get_exception(proto_module_inst);
+    fprintf(stderr, "send_message trapped: %s\n", ex ? ex : "(null)");
+  }
 }

@@ -4,7 +4,7 @@
 
 //#include "wasm_app.h"
 
-#include <iostream>
+#include <stdio.h>
 #include <cstdint>
 
 // External function declarations
@@ -17,6 +17,7 @@ extern "C" {
 // wasm doesn't support cout? 
 extern "C" int32_t mul7(int32_t n) {
     printf("calling into WASM function: %s,", __FUNCTION__);
+    fflush(stdout);
     n = n * 7;
     printf("    %s return %d \n", __FUNCTION__, n);
     return n;
@@ -81,14 +82,22 @@ extern "C" void float_to_string(float n, char *res, int res_size, int afterpoint
     int i = intToStr(ipart, res, res_size, 0);
 
     // check for display option after point
-    if (afterpoint != 0) {
+    if (afterpoint != 0 && i < res_size - 1) {
         res[i] = '.'; // add dot
 
         // Get the value of fraction part upto given no.
         // of points after dot.
         fpart = fpart * get_pow(10, afterpoint);
 
-        intToStr((int)fpart, res + i + 1, res_size - i - 1, afterpoint);
+        // intToStr((int)fpart, res + i + 1, res_size - i - 1, afterpoint);
+        int written = intToStr((int)fpart, res + i, res_size - i, afterpoint);
+        i += written;
     }
+
+    // Always null-terminate the string
+    if (i < res_size)
+        res[i] = '\0';
+    else
+        res[res_size - 1] = '\0';  // just in case
 }
 

@@ -1,26 +1,25 @@
-# Copyright 2018 gRPC authors.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
 cmake_minimum_required(VERSION 3.8)
 
 project(HelloWorld C CXX)
 
 # to download and build external content ie git repos at configure time
-include (ExternalProject)
 include (FetchContent)
 
 set(SOURCES
     src/host.cpp
     src/native_impl.cpp
     src/host_utils.cpp
-    proto_messages/generated/message.pb.cc
+    proto_messages/generated_full/message.pb.cc
 )
 
-# add_subdirectory(wasm)
+# ----------------------------------
+# Executable
+# ----------------------------------
+
+# Build the wasm_host executable
+add_executable(wasm_host 
+  ${SOURCES}
+)
 
 # ------------------------------
 # Add WAMR support for wasm_host
@@ -51,9 +50,6 @@ set(WAMR_BUILD_LIBC_WASI 1)   # WASI support for syscalls
 set(WAMR_BUILD_LIB_PTHREAD 0)
 set(WAMR_BUILD_REF_TYPES 1)
 
-set(ABSL_ENABLE_INSTALL ON)
-
-
 # builds wamr, creating wamrlib static library and links to public interface of wamrlib
 include (${WAMR_ROOT_DIR}/build-scripts/runtime_lib.cmake)
 add_library(wamrlib "${WAMR_RUNTIME_LIB_SOURCE}")
@@ -61,45 +57,18 @@ target_include_directories(wamrlib PUBLIC
         ${PLATFORM_SHARED_DIR}
 )
 
-# Build the wasm_host executable
-add_executable(wasm_host ${SOURCES})
+# ----------------------------------
+# Protobuf & Abseil
+# ----------------------------------
+
+add_subdirectory(third_party/abseil-cpp)
 
 target_include_directories(wasm_host PRIVATE
     include
     ${wamr_ext_SOURCE_DIR}/core/iwasm/include
-    proto_messages/generated
+    third_party/protobuf/src
+    proto_messages/generated_full
 )
-
-# ----------------------------------
-# Add protobuf & abseil from source
-# ----------------------------------
-
-# Abseil
-FetchContent_Declare(
-  abseil
-  GIT_REPOSITORY https://github.com/abseil/abseil-cpp.git
-  GIT_TAG        20250127.1
-)
-FetchContent_MakeAvailable(abseil)
-
-# Protobuf
-FetchContent_Declare(
-  protobuf
-  GIT_REPOSITORY https://github.com/protocolbuffers/protobuf.git
-  GIT_TAG        v30.1  # Or a version you prefer
-)
-set(protobuf_BUILD_TESTS OFF)  # Prevent absl::scoped_mock_log errors
-set(protobuf_ABSL_PROVIDER "package")  # Use our own Abseil
-FetchContent_MakeAvailable(protobuf)
-
-# Add include dirs for generated protobuf headers
-target_include_directories(wasm_host PRIVATE
-    ${protobuf_SOURCE_DIR}/src
-    proto_messages/generated
-)
-
-set(PROTOC_EXECUTABLE $<TARGET_FILE:protobuf::protoc>)
-
 
 # Link the prebuilt libraries
 target_link_libraries(wasm_host
@@ -107,11 +76,6 @@ target_link_libraries(wasm_host
         pthread
         m
         dl
-        
-        protobuf::libprotobuf
-        absl::check
-        absl::flags
-        absl::flags_parse
-        absl::log
-        absl::log_initialize
+        absl::base
+        ${CMAKE_SOURCE_DIR}/third_party/protobuf/build/libprotobuf.a
 )
