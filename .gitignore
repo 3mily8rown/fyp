@@ -1,6 +1,7 @@
 *.o
 *.pb.cc
 *.pb.h
+*.pb.c
 build
 cmake-build-debug
 .idea
