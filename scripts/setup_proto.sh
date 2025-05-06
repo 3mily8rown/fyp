@@ -4,6 +4,8 @@ set -e
 ROOT_DIR=$(dirname "$0")/..
 cd "$ROOT_DIR"
 
+echo "##################### Running setup_proto.sh"
+
 # Clone abseil and protobuf if have not already for native side
 mkdir -p third_party
 cd third_party

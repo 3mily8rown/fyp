@@ -9,8 +9,12 @@
 #include <unistd.h>
 #include <wasm_export.h>
 
-#include "host_utils.h"
+#include "call_wasm_utils.h"
 #include "host_proto.h"
+#include "mangling_utils.h"
+
+#include "wasm_app_exports.h"
+#include "protowasm_app_exports.h"
 
 #include "/home/eb/fyp/helloworld/proto_messages/generated_full/message.pb.h"       
 
@@ -137,6 +141,9 @@ int main() {
     return 1;
   }
 
+  std::unordered_map<std::string, WASMFunctionInstanceCommon*> exports_map;
+  cache_all_exports(module_inst, WASM_APP_EXPORT_NAMES);
+
   // Load second wasm module
   wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/protowasm_app.wasm";
   auto proto_buffer = readFileToBytes(wasmPath);
@@ -147,12 +154,13 @@ int main() {
     return 1;
   }
 
+  cache_all_exports(proto_module_inst, PROTOWASM_APP_EXPORT_NAMES);
 
   //Calling WASM functions:
   int32_t result;
 
   // expecting 10
-  if (call_int_func(module_inst, exec_env, "mul5", {2}, result) == 0) {
+  if (call_cached_int_func(module_inst, exec_env, "mul5", {2}, result) == 0) {
     printf("Result from mul5(): %d\n", result);
   } else
   {
@@ -160,7 +168,7 @@ int main() {
   }
 
   // expecting 70
-  if (call_int_func(module_inst, exec_env, "mul7", {10}, result) == 0) {
+  if (call_cached_int_func(module_inst, exec_env, "mul7", {10}, result) == 0) {
     printf("Result from mul7(10): %d\n", result);
   } else
   {
@@ -168,7 +176,7 @@ int main() {
   }
 
   // expecting 88
-  if (call_int_func(module_inst, exec_env, "mul", {8,11}, result) == 0) {
+  if (call_cached_int_func(module_inst, exec_env, "mul", {8,11}, result) == 0) {
     printf("Result from mul(8,11): %d\n", result);
   } else
   {
@@ -176,7 +184,7 @@ int main() {
   }
 
   // expecting 16
-  if (call_int_func(module_inst, exec_env, "power", {2,4}, result) == 0) {
+  if (call_cached_int_func(module_inst, exec_env, "power", {2,4}, result) == 0) {
     printf("Result from power(2,4): %d\n", result);
   } else
   {
@@ -184,7 +192,7 @@ int main() {
   }
 
   // expecting 96
-  if (call_int_func(module_inst, exec_env, "calculate", {8}, result) == 0) {
+  if (call_cached_int_func(module_inst, exec_env, "calculate", {8}, result) == 0) {
     printf("Result from calculate(8): %d\n", result);
   } else
   {
@@ -199,19 +207,22 @@ int main() {
   }
 
   // sending a message from wasm to native using protobuffers
-  wasm_function_inst_t func1 = wasm_runtime_lookup_function(proto_module_inst, "send_message");
+  auto func1 = get_exported_func("send_message", proto_module_inst);
   if (!func1) {
-    printf("Function not found in wasm module :(");
+    fprintf(stderr, "send_message wasm function is not found.\n");
+    return 1;
   }
+  
   if (!wasm_runtime_call_wasm(proto_exec_env, func1, 0, nullptr)) {
     const char* ex = wasm_runtime_get_exception(proto_module_inst);
     fprintf(stderr, "send_message trapped: %s\n", ex ? ex : "(null)");
   }
 
   // sending a message from native to wasm with protobuffers
-  wasm_function_inst_t func2 = wasm_runtime_lookup_function(proto_module_inst, "receive_message");
+  auto func2 = get_exported_func("receive_message", proto_module_inst);
   if (!func2) {
-    printf("Function not found in wasm module :(");
+    fprintf(stderr, "receive_message wasm function is not found.\n");
+    return 1;
   }
 
   WasmBuffer msg = make_wasm_buffer(make_example_msg(), proto_module_inst);

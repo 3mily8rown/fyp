@@ -9,6 +9,7 @@
 #include <wasm_export.h>
 
 #include "message.pb.h"
+#include "mangling_utils.h"
 
 int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t module_inst) {
     wasm_function_inst_t func_generate = nullptr;
@@ -17,13 +18,17 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
     uint64_t wasm_buffer = 0;
 
     // Lookup generate_float
-    if (!(func_generate = wasm_runtime_lookup_function(module_inst, "generate_float"))) {
-        printf("The generate_float wasm function is not found.\n");
-        return 1;
+    func_generate = get_exported_func("generate_float", module_inst);
+    if (!func_generate) {
+      fprintf(stderr, "The generate_float wasm function is not found.\n");
+      return 1;
     }
 
     // Prepare arguments and result buffer
-    wasm_val_t results[1] = { { .kind = WASM_F32, .of.f32 = 0 } };
+    wasm_val_t results[1];
+    results[0].kind   = WASM_F32;
+    results[0].of.f32 = 0.0f;
+    
     wasm_val_t arguments[3] = {
         { .kind = WASM_I32, .of.i32 = 10 },
         { .kind = WASM_F64, .of.f64 = 0.000101 },
@@ -54,9 +59,10 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
     argv2[3] = 3;  // digits after decimal
 
     // Lookup float_to_string
-    if (!(func_format = wasm_runtime_lookup_function(module_inst, "float_to_string"))) {
-        printf("The float_to_string wasm function is not found.\n");
-        return 1;
+    func_format = get_exported_func("float_to_string", module_inst);
+    if (!func_format) {
+      fprintf(stderr, "The float_to_string wasm function is not found.\n");
+      return 1;
     }
 
     if (wasm_runtime_call_wasm(exec_env, func_format, 4, argv2)) {
@@ -77,7 +83,8 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
     return 0;
 }
 
-// call a function that takes in vector of int args and outputs 1 int
+// Call a function that takes in vector of int args and outputs 1 int
+// Returns 0 on success, non-zero on error.
 int call_int_func(wasm_module_inst_t module_inst,
     wasm_exec_env_t exec_env,
     const char* func_name,
@@ -101,7 +108,6 @@ int call_int_func(wasm_module_inst_t module_inst,
     }
 
     // return result
-    // wasm_val_t results[1] = { { .kind = WASM_I32, .of.i32 = 0 } };
     wasm_val_t results[1];
     results[0].kind = WASM_I32;
     results[0].of.i32 = 0;
@@ -150,4 +156,48 @@ const char* call_func(wasm_module_inst_t inst, wasm_exec_env_t env, const char* 
     // Safe to use results[0] in either case now
     const char* ret_ptr = (char*)wasm_runtime_addr_app_to_native(inst, results[0].of.i32);
     return ret_ptr;
-  }
+}
+
+// Call a cached export function that takes in vector of int32 args and outputs 1 int32
+// Returns 0 on success, non-zero on error.
+int call_cached_int_func(
+    wasm_module_inst_t module_inst,
+    wasm_exec_env_t exec_env,
+    const std::string &name,
+    const std::vector<uint32_t>& args,
+    int32_t& result_out) {
+
+    auto func = get_exported_func(name, module_inst);
+    if (!func) {
+      fprintf(stderr, "ERROR: null function pointer\n");
+      return 1;
+    }
+  
+    // Convert uint32_t args to wasm_val_t
+    std::vector<wasm_val_t> wasm_args;
+    wasm_args.reserve(args.size());
+    for (auto a : args) {
+      wasm_val_t v;
+      v.kind = WASM_I32;
+      v.of.i32 = a;
+      wasm_args.push_back(v);
+    }
+  
+    // result
+    wasm_val_t results[1];
+    results[0].kind = WASM_I32;
+    results[0].of.i32 = 0;
+  
+    // call func
+    if (!wasm_runtime_call_wasm_a(exec_env,func, 1, results, wasm_args.size(), wasm_args.data())) {
+        printf("call wasm function %s failed. %s\n",
+        func,
+        wasm_runtime_get_exception(module_inst));
+        return 1;
+    }
+  
+    result_out = results[0].of.i32;
+    return 0;
+}
+  
+  

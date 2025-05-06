@@ -10,3 +10,4 @@ third_party/*
 terminal-notes.txt
 .venv
 cmake
+generated/*

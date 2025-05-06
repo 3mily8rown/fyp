@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.8)
 
 project(HelloWorld C CXX)
 
-# to download and build external content ie git repos at configure time
 include (FetchContent)
 
 set(SOURCES
     src/host.cpp
     src/native_impl.cpp
-    src/host_utils.cpp
+    src/call_wasm_utils.cpp
     src/host_proto.cpp
+    src/mangling_utils.cpp
     proto_messages/generated_full/message.pb.cc
 )
 
@@ -23,7 +23,7 @@ add_executable(wasm_host
 )
 
 # ------------------------------
-# Add WAMR support for wasm_host
+# Add WAMR support
 # ------------------------------
 
 # downloading WAMR
@@ -67,6 +67,7 @@ add_subdirectory(third_party/abseil-cpp)
 target_include_directories(wasm_host PRIVATE
     proto_messages/generated_full
     include
+    "${CMAKE_SOURCE_DIR}/generated"
     ${wamr_ext_SOURCE_DIR}/core/iwasm/include
     third_party/protobuf/src
 )
