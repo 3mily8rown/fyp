@@ -1,3 +1,0 @@
-/home/eb/fyp/grpc/examples/cpp/helloworld/cmake/build/CMakeFiles/absl.dir
-/home/eb/fyp/grpc/examples/cpp/helloworld/cmake/build/CMakeFiles/edit_cache.dir
-/home/eb/fyp/grpc/examples/cpp/helloworld/cmake/build/CMakeFiles/rebuild_cache.dir
