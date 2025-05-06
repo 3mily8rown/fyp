@@ -8,3 +8,5 @@ cmake-build-debug
 .vscode
 third_party/*
 terminal-notes.txt
+.venv
+cmake
