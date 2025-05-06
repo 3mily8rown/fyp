@@ -1,17 +1,15 @@
 #!/bin/bash
 
-#
-# Copyright (C) 2019 Intel Corporation.  All rights reserved.
-# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-#
-
 set -e  # Exit immediately on any error
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-OUT_DIR="${SCRIPT_DIR}/build"
-WASM_APPS="${SCRIPT_DIR}/wasm"
-PROTO_MESSAGES="${SCRIPT_DIR}/proto_messages"
-NANOPB="${SCRIPT_DIR}/third_party/nanopb"
+ROOT_DIR="${SCRIPT_DIR}/.."
+OUT_DIR="${ROOT_DIR}/build"
+WASM_APPS="${ROOT_DIR}/wasm"
+PROTO_MESSAGES="${ROOT_DIR}/proto_messages"
+NANOPB="${ROOT_DIR}/third_party/nanopb"
+
+cd $ROOT_DIR
 
 # Defaults to running cmake and crosscompiling the wasm files
 BUILD_TYPE=${1:-full}
@@ -22,7 +20,7 @@ if [ "$BUILD_TYPE" != "skip" ]; then
 
   if [ "$BUILD_TYPE" = "full" ]; then
     echo "##################### Running setup_proto.sh"
-    "${SCRIPT_DIR}/scripts/setup_proto.sh"
+    "${SCRIPT_DIR}/setup_proto.sh"
 
     echo "##################### Reconfiguring CMake"
     rm -rf "${OUT_DIR}" cmake-build-debug CMakeCache.txt CMakeFiles

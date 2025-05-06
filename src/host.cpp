@@ -26,7 +26,7 @@ MyMessage make_example_msg() {
   return m;
 }
 
-// used to read WASM bytecode at runtime (into byte array)
+// read WASM bytecode at runtime (into byte array)
 std::vector<uint8_t> readFileToBytes(const std::string& path)
 {
   int fd = open(path.c_str(), O_RDONLY);

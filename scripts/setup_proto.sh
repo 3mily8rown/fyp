@@ -4,7 +4,7 @@ set -e
 ROOT_DIR=$(dirname "$0")/..
 cd "$ROOT_DIR"
 
-# --- Fetch Abseil and Protobuf ---
+# Clone abseil and protobuf if have not already for native side
 mkdir -p third_party
 cd third_party
 
@@ -33,7 +33,7 @@ PROTOC_BIN=$(pwd)/protoc
 
 cd "$ROOT_DIR"
 
-# --- Generate Protobuf files ---
+# Generate proto files with the built protoc
 
 PROTO_DIR=proto_messages
 PROTO_FILE=$PROTO_DIR/message.proto
@@ -49,7 +49,7 @@ $PROTOC_BIN \
     "$PROTO_FILE"
 
 
-# --- Generate Nanopb files ---
+# Generate the proto files for the wasm modules with the built protoc
 
 # Set up venv if needed
 VENV_DIR="$ROOT_DIR/.venv"
@@ -63,6 +63,9 @@ fi
 # Run protoc with plugin using venv Python
 export PATH="$VENV_DIR/bin:$PATH"
 
+# Inside proto dir to help nanopb find the options file
+cd $PROTO_DIR 
+
 OUT_NANO=generated_nano
 PROTO_NANO_FILE=message.proto
 
@@ -72,14 +75,9 @@ echo "Generating Nanopb C files..."
 
 rm -rf "$OUT_NANO"/*
 
-# done inside proto dir so it can find the options file
-cd $PROTO_DIR 
 $PROTOC_BIN \
   --plugin=protoc-gen-nanopb="$ROOT_DIR/wasm_libraries/nanopb/nanopb_plugin.sh" \
   --proto_path=. \
   --proto_path=third_party/nanopb/generator/proto \
   --nanopb_out="$OUT_NANO" \
-  "$PROTO_NANO_FILE" # 2>&1 | tee nanopb_gen.log
-
-
-
+  "$PROTO_NANO_FILE"

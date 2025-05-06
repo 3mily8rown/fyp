@@ -1,4 +1,0 @@
-Running nanopb plugin...
-Invoking: python3 /home/eb/fyp/helloworld/wasm_libraries/nanopb/../../third_party/nanopb/generator/nanopb_generator.py --protoc-plugin
->>> ENTERED main_plugin()
-Args: ['/home/eb/fyp/helloworld/wasm_libraries/nanopb/../../third_party/nanopb/generator/nanopb_generator.py', '--protoc-plugin']

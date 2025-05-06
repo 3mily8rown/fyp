@@ -1,7 +1,51 @@
-# gRPC C++ Hello World Example
-https://github.com/grpc/grpc
+# FYP
 
-You can find a complete set of instructions for building gRPC and running the
-Hello World app in the [C++ Quick Start][].
+> Communicating WASM and cpp modules
 
-[C++ Quick Start]: https://grpc.io/docs/languages/cpp/quickstart
+---
+
+## Table of Contents
+
+1. [About](#about)  
+2. [Features](#features)  
+3. [Getting Started](#getting-started)  
+   - [Prerequisites](#prerequisites)  
+   - [Installation](#installation)  
+---
+
+## About
+
+- **What it does.**  
+TODO
+- **Why it matters.**  
+TODO
+- **Key technologies**
+Web assembly, cpp, protobuf
+
+---
+
+## Features
+
+- TODO 
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- WASI-sdk
+- Python    
+
+### Installation
+
+Step-by-step instructions:
+
+```bash
+# clone repo
+git clone git@github.com:3mily8rown/fyp.git
+cd helloworld
+
+# build
+./scripts/build.sh
+
