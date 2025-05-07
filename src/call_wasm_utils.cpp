@@ -17,13 +17,6 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
     char *native_buffer = nullptr;
     uint64_t wasm_buffer = 0;
 
-    // Lookup generate_float
-    func_generate = get_exported_func("generate_float", module_inst);
-    if (!func_generate) {
-      fprintf(stderr, "The generate_float wasm function is not found.\n");
-      return 1;
-    }
-
     // Prepare arguments and result buffer
     wasm_val_t results[1];
     results[0].kind   = WASM_F32;
@@ -34,6 +27,13 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
         { .kind = WASM_F64, .of.f64 = 0.000101 },
         { .kind = WASM_F32, .of.f32 = 300.002 },
     };
+
+    // Lookup generate_float
+    func_generate = get_exported_func("generate_float", module_inst, arguments, 3);
+    if (!func_generate) {
+      fprintf(stderr, "The generate_float wasm function is not found.\n");
+      return 1;
+    }
 
     if (!wasm_runtime_call_wasm_a(exec_env, func_generate, 1, results, 3, arguments)) {
         printf("call wasm function generate_float failed. %s\n",
@@ -52,22 +52,22 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
     }
 
     // Prepare arguments for float_to_string
-    uint32_t argv2[4];
-    memcpy(&argv2[0], &ret_val, sizeof(float));
-    argv2[1] = (uint32_t)wasm_buffer;
-    argv2[2] = 100;
-    argv2[3] = 3;  // digits after decimal
+    int32_t buf32 = static_cast<int32_t>(wasm_buffer);
+    wasm_val_t argv2[4] = {
+      { .kind = WASM_F32, .of.f32 = ret_val      },
+      { .kind = WASM_I32, .of.i32 = buf32 },
+      { .kind = WASM_I32, .of.i32 = 100           },
+      { .kind = WASM_I32, .of.i32 = 3             }
+    };
 
     // Lookup float_to_string
-    func_format = get_exported_func("float_to_string", module_inst);
+    func_format = get_exported_func("float_to_string", module_inst, argv2, 4);
     if (!func_format) {
       fprintf(stderr, "The float_to_string wasm function is not found.\n");
       return 1;
     }
 
-    if (wasm_runtime_call_wasm(exec_env, func_format, 4, argv2)) {
-        // printf("Native finished calling float_to_string, returned: %s\n", native_buffer);
-        // replaced ^ with below incase malformed string
+    if (wasm_runtime_call_wasm_a(exec_env, func_format, 0, nullptr, 4, argv2)) {
         printf("Raw bytes from WASM buffer:\n");
         for (int i = 0; i < 100; i++) {
             if (native_buffer[i] == 0) break;
@@ -80,46 +80,6 @@ int call_generate_and_format_float(wasm_exec_env_t exec_env, wasm_module_inst_t 
         return 1;
     }
 
-    return 0;
-}
-
-// Call a function that takes in vector of int args and outputs 1 int
-// Returns 0 on success, non-zero on error.
-int call_int_func(wasm_module_inst_t module_inst,
-    wasm_exec_env_t exec_env,
-    const char* func_name,
-    const std::vector<uint32_t>& args,
-    int32_t& result_out)
-{
-    wasm_function_inst_t func = nullptr;
-    // lookup wasm function being called
-    if (!(func = wasm_runtime_lookup_function(module_inst, func_name))) {
-    printf("The %s wasm function is not found.\n", func_name);
-    return 1;
-    }
-
-    // Convert uint32_t args to wasm_val_t
-    std::vector<wasm_val_t> wasm_args;
-    for (uint32_t arg : args) {
-    wasm_val_t val;
-    val.kind = WASM_I32;
-    val.of.i32 = arg;
-    wasm_args.push_back(val);
-    }
-
-    // return result
-    wasm_val_t results[1];
-    results[0].kind = WASM_I32;
-    results[0].of.i32 = 0;
-
-    if (!wasm_runtime_call_wasm_a(exec_env, func, 1, results, wasm_args.size(), wasm_args.data())) {
-    printf("call wasm function %s failed. %s\n",
-    func_name,
-    wasm_runtime_get_exception(module_inst));
-    return 1;
-    }
-
-    result_out = results[0].of.i32;
     return 0;
 }
 
@@ -167,12 +127,6 @@ int call_cached_int_func(
     const std::vector<uint32_t>& args,
     int32_t& result_out) {
 
-    auto func = get_exported_func(name, module_inst);
-    if (!func) {
-      fprintf(stderr, "ERROR: null function pointer\n");
-      return 1;
-    }
-  
     // Convert uint32_t args to wasm_val_t
     std::vector<wasm_val_t> wasm_args;
     wasm_args.reserve(args.size());
@@ -181,6 +135,12 @@ int call_cached_int_func(
       v.kind = WASM_I32;
       v.of.i32 = a;
       wasm_args.push_back(v);
+    }
+
+    auto func = get_exported_func(name, module_inst, wasm_args.data(), wasm_args.size());
+    if (!func) {
+      fprintf(stderr, "ERROR: null function pointer\n");
+      return 1;
     }
   
     // result

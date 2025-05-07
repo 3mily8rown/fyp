@@ -8,11 +8,11 @@
 #include <cstdint>
 
 // External function declarations
-extern "C" {
-    int intToStr(int x, char *str, int str_len, int digit);
-    int32_t get_pow(int x, int y);
-    int32_t calculate_native(int32_t n, int32_t func1, int32_t func2);
-}
+
+int intToStr(int x, char *str, int str_len, int digit);
+int32_t get_pow(int x, int y);
+int32_t calculate_native(int32_t n, int32_t func1, int32_t func2);
+
 
 // wasm doesn't support cout? 
 int32_t mul7(int32_t n) {
@@ -26,6 +26,13 @@ int32_t mul7(int32_t n) {
 int32_t mul5(int32_t n) {
     printf("calling into WASM function: %s,", __FUNCTION__);
     n = n * 5;
+    printf("    %s return %d \n", __FUNCTION__, n);
+    return n;
+}
+
+int32_t mul5(int32_t n, int32_t m) {
+    printf("calling into WASM function: %s,", __FUNCTION__);
+    n = n * m * 5;
     printf("    %s return %d \n", __FUNCTION__, n);
     return n;
 }

@@ -22,6 +22,7 @@ do
 
   echo "building ${OUT_FILE} from ${src}"
   # could use -Wl,--allow-undefined \ instead of a file listing functions
+  # -Wl,--allow-undefined-file="${WASM_APPS}/native_impls.txt" \
   $CXX \
           --target=wasm32-wasi \
           -I"${WASM_APPS}/../proto_messages/generated_nano" \
@@ -30,16 +31,23 @@ do
           -lnanopb \
           -Wl,--export-all \
           -Wl,--no-gc-sections \
-          -Wl,--allow-undefined-file="${WASM_APPS}/native_impls.txt" \
+          -Wl,--allow-undefined \
           -o "${OUT_FILE}" \
           "${src}" \
           "${WASM_APPS}/../proto_messages/generated_nano/message.pb.c"
 
   # generate export list header
   echo "Generating exports header ${BASE}"
-
   python3 "${SCRIPT_DIR}/generate_wasm_exports.py" \
     "${OUT_FILE}" "${GEN_DIR}/${BASE}_exports.h"
+
+  # generate import
+  echo "Generating imports header for ${BASE}"
+  rm -f "${GEN_DIR}/${BASE}_imports.h"
+  
+  python3 "${SCRIPT_DIR}/generate_wasm_imports.py" \
+      --module "${BASE}" \
+      "${OUT_FILE}" "${GEN_DIR}/${BASE}_imports.h"
 
 done
 
