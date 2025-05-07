@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <cstdint>
+#include <cstdlib>
 
 #include "pb_encode.h"
 #include "pb_decode.h"
 #include "message.pb.h"
 
-extern "C" void pass_to_native(uint32_t offset, uint32_t length);
-
-extern "C" void* malloc(size_t size);
+void pass_to_native(uint32_t offset, uint32_t length);
 struct MessageBuffer {
     uint8_t* ptr;
     uint32_t size;

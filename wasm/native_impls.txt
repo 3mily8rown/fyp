@@ -1,5 +1,4 @@
 calculate_native
 get_pow
 intToStr
-pass_to_native_wrapper
 pass_to_native
