@@ -157,11 +157,20 @@ int main() {
   cache_all_exports(proto_module_inst, PROTOWASM_APP_EXPORT_NAMES);
 
   //Calling WASM functions:
+  // TODO: these seem very like they should be tests..
   int32_t result;
 
   // expecting 10
   if (call_cached_int_func(module_inst, exec_env, "mul5", {2}, result) == 0) {
     printf("Result from mul5(): %d\n", result);
+  } else
+  {
+    return 1;
+  }
+
+  // expecting 10
+  if (call_cached_int_func(module_inst, exec_env, "mul5", {2, 1}, result) == 0) {
+    printf("Result from overloaded mul5(): %d\n", result);
   } else
   {
     return 1;
@@ -219,22 +228,22 @@ int main() {
   }
 
   // sending a message from native to wasm with protobuffers
-  auto func2 = get_exported_func("receive_message", proto_module_inst);
-  if (!func2) {
-    fprintf(stderr, "receive_message wasm function is not found.\n");
-    return 1;
-  }
-
   WasmBuffer msg = make_wasm_buffer(make_example_msg(), proto_module_inst);
   const std::vector<uint32_t>& args = {msg.offset, msg.length};
 
-  // Convert uint32_t args to wasm_val_t
-  std::vector<wasm_val_t> wasm_args;
-  for (uint32_t arg : args) {
-  wasm_val_t val;
-  val.kind = WASM_I32;
-  val.of.i32 = arg;
-  wasm_args.push_back(val);
+    // Convert uint32_t args to wasm_val_t
+    std::vector<wasm_val_t> wasm_args;
+    for (uint32_t arg : args) {
+    wasm_val_t val;
+    val.kind = WASM_I32;
+    val.of.i32 = arg;
+    wasm_args.push_back(val);
+    }
+
+  auto func2 = get_exported_func("receive_message", proto_module_inst, wasm_args.data(), wasm_args.size());
+  if (!func2) {
+    fprintf(stderr, "receive_message wasm function is not found.\n");
+    return 1;
   }
 
   if (!wasm_runtime_call_wasm_a(proto_exec_env, func2, 0, nullptr, wasm_args.size(), wasm_args.data())) {

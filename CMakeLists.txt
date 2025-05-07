@@ -4,13 +4,9 @@ project(HelloWorld C CXX)
 
 include (FetchContent)
 
-set(SOURCES
-    src/host.cpp
-    src/native_impl.cpp
-    src/call_wasm_utils.cpp
-    src/host_proto.cpp
-    src/mangling_utils.cpp
-    proto_messages/generated_full/message.pb.cc
+file(GLOB_RECURSE SOURCES
+     "${CMAKE_SOURCE_DIR}/src/*.cpp"
+     "${CMAKE_SOURCE_DIR}/proto_messages/generated_full/*.cc"
 )
 
 # ----------------------------------

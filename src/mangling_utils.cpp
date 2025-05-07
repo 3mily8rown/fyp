@@ -1,10 +1,14 @@
-#include "mangling_utils.h"
 #include <cxxabi.h>
 #include <unordered_map>
 #include <mutex>
 #include <cstdio>
-
 #include <wasm_export.h>
+#include <string>
+#include <vector>
+#include <sstream>
+#include <cstdint>
+
+#include "mangling_utils.h"
 
 using ExportMap = std::unordered_map<std::string, WASMFunctionInstanceCommon*>;
 
@@ -25,7 +29,19 @@ void cache_all_exports(wasm_module_inst_t inst,
   }
 }
 
-WASMFunctionInstanceCommon* get_exported_func(const std::string& name, wasm_module_inst_t module_inst) {
+// WASMFunctionInstanceCommon* get_exported_func(const std::string& name, wasm_module_inst_t module_inst, const std::vector<wasm_val_t>& args) {
+//   return get_exported_func(buildTypedKey(name, args), module_inst);
+// }
+
+WASMFunctionInstanceCommon* get_exported_func(const std::string& name, wasm_module_inst_t module_inst, const wasm_val_t args[], size_t count) {
+  return get_exported_func(buildTypedKey(name, args, count), module_inst);
+}
+
+WASMFunctionInstanceCommon* get_exported_int_func(const std::string& name, wasm_module_inst_t module_inst, const size_t len) {
+  return get_exported_func(buildIntTypedKey(name, len), module_inst);
+}
+
+WASMFunctionInstanceCommon* get_exported_func(const std::string& typed_name, wasm_module_inst_t module_inst) {
   std::lock_guard<std::mutex> guard(map_mutex);
 
   // find module map
@@ -38,12 +54,50 @@ WASMFunctionInstanceCommon* get_exported_func(const std::string& name, wasm_modu
 
   // find function
   auto &map = mod->second;
-  auto func = map.find(name);
+  auto func = map.find(typed_name);
   if (func == map.end()) {
     std::fprintf(stderr,
                  "ERROR: export '%s' not found in module %p\n",
-                 name.c_str(), (void*)module_inst);
+                 typed_name.c_str(), (void*)module_inst);
     return nullptr;
   }
   return func->second;
+}
+
+std::string normalize_kind(uint8_t kind) {
+  switch (kind) {
+      case WASM_I32: return "int";
+      case WASM_I64: return "int64";
+      case WASM_F32: return "float";
+      case WASM_F64: return "double";
+      default:       return "unknown";
+  }
+}
+
+std::string buildTypedKey(const std::string& name, const wasm_val_t args[], size_t count) {
+  if (count == 0) {
+      return name;
+  }
+
+  std::ostringstream oss;
+  oss << name << ":";
+  for (size_t i = 0; i < count; ++i) {
+      if (i > 0) oss << ",";
+      oss << normalize_kind(args[i].kind);
+  }
+  return oss.str();
+}
+
+std::string buildIntTypedKey(const std::string& name, size_t length) {
+  if (length == 0) {
+      return name;
+  }
+
+  std::ostringstream oss;
+  oss << name << ":";
+  for (size_t i = 0; i < length; ++i) {
+      if (i > 0) oss << ",";
+      oss << "int";
+  }
+  return oss.str();
 }

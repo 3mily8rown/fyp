@@ -31,7 +31,7 @@ MessageBuffer message_to_buffer(const MyMessage msg) {
     return {buffer_ptr, static_cast<uint32_t>(stream.bytes_written)};
 }
 
-extern "C" void send_message() {
+void send_message() {
     MyMessage msg = MyMessage_init_default;
     msg.id = 42;
     strcpy(msg.name, "hello from wasm");
@@ -43,7 +43,7 @@ extern "C" void send_message() {
     }
 }
 
-extern "C" void receive_message(uint32_t offset, uint32_t length) {
+void receive_message(uint32_t offset, uint32_t length) {
     // Turn linear memory into nanopb stream
     pb_istream_t stream = pb_istream_from_buffer((pb_byte_t*)(uintptr_t)offset, length);
 

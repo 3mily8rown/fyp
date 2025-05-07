@@ -30,6 +30,13 @@ int32_t mul5(int32_t n) {
     return n;
 }
 
+int32_t mul5(int32_t n, int32_t m) {
+    printf("calling into WASM function: %s,", __FUNCTION__);
+    n = n * m * 5;
+    printf("    %s return %d \n", __FUNCTION__, n);
+    return n;
+}
+
 int32_t mul(int32_t n, int32_t m) {
     printf("calling into WASM function: %s,", __FUNCTION__);
     n = n * m;
