@@ -16,8 +16,13 @@ fi
 if [ ! -d abseil-cpp ]; then
   git clone -b 20230125.2 --depth 1 https://github.com/abseil/abseil-cpp.git
 fi
+if [ ! -d nanopb ]; then
+  git clone --depth 1 https://github.com/nanopb/nanopb.git
+  cd "${ROOT_DIR}/wasm_libraries/nanopb"
+  "./nanopb_build.sh"
+fi
 
-cd protobuf
+cd "$ROOT_DIR"/third_party/protobuf
 mkdir -p build
 cd build
 

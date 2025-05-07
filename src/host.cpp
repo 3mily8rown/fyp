@@ -19,7 +19,7 @@
 #include "protowasm_app_exports.h"
 #include "protowasm_app_imports.h"
 
-#include "/home/eb/fyp/helloworld/proto_messages/generated_full/message.pb.h"       
+#include "/home/eb/fyp/my_repos/helloworld/proto_messages/generated_full/message.pb.h"       
 
 int intToStr(int x, char *str, int str_len, int digit);
 int32_t calculate_native(wasm_exec_env_t exec_env, int32_t n, int32_t func1, int32_t func2);
@@ -86,7 +86,7 @@ int main() {
   // --------------------------Load first wasm module
 
   // TODO avoid hardcoding
-  std::string wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/wasm_app.wasm";
+  std::string wasmPath = "/home/eb/fyp/my_repos/helloworld/build/wasm-apps/wasm_app.wasm";
   auto buffer = readFileToBytes(wasmPath);
 
   // load module and create execution environment
@@ -99,7 +99,7 @@ int main() {
 
   // --------------------------Load second wasm module
 
-  wasmPath = "/home/eb/fyp/helloworld/build/wasm-apps/protowasm_app.wasm";
+  wasmPath = "/home/eb/fyp/my_repos/helloworld/build/wasm-apps/protowasm_app.wasm";
   auto proto_buffer = readFileToBytes(wasmPath);
 
   // load module and create execution environment
